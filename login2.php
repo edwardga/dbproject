@@ -16,10 +16,7 @@
 	if ($result_row = mysql_fetch_row(($result)))
 	{
 		echo 'login successed<br />' ;
-	  	if ($result_row[2] == 'artist')
-			echo 'u r an artist!' ;
-		else
-			echo 'u r an audience.' ;
+		$session['account'] = $acc ;
 	}
 	else
         header ("Location:http://localhost/login1.php?fail=1") ;

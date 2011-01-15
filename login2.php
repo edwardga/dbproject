@@ -19,5 +19,5 @@
 		$session['account'] = $acc ;
 	}
 	else
-        header ("Location:http://localhost/login1.php?fail=1") ;
+        header ("Location:login1.php?fail=1") ;
 ?>

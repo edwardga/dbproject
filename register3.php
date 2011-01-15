@@ -11,8 +11,10 @@
 	$db_host = 'localhost' ;
 	$db_database = 'DBproject' ;
 	$db_username = 'root' ;
+	if ($acc == NULL or $pw == NULL or $name == NULL or ($phone == NULL and $dtime == NULL))
+		header ("Location:register2.php?empty=1") ;
 	if ($pw != $cpw)
-		header ("Location:http://localhost/register2.php?fail=1") ;
+		header ("Location:register2.php?fail=1") ;
 	$connection = mysql_connect($db_host, $db_username, '');
 	if (!$connection)
 		die ("connection failed".mysql_error()) ;
@@ -22,7 +24,7 @@
 	$valid = "SELECT * FROM account WHERE account_id = '$acc';" ;
 	$valid2 = mysql_query($valid) ;
 	if ($same = mysql_fetch_row($valid2))
-		header ("Location:http://localhost/register2.php?err=1") ;
+		header ("Location:register2.php?err=1") ;
 	if ($type == artist)
 	{
 		$total = "SELECT * FROM artist" ;

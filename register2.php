@@ -8,6 +8,8 @@
 <body>
 	
 <?php
+	if (isset($_GET["empty"]))
+		echo 'No attribute can be empty!' ;	
 	if (isset($_GET["fail"]))
 		echo 'passwords are not the same.' ;
 	if (isset($_GET["err"]))

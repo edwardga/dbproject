@@ -1,3 +1,4 @@
+<?php include "dbpage/include/auth.php"; ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -6,10 +7,13 @@
 </head>
 
 <body>
+
 	
 	<?php
-	$account = $_SESSION['account'];
-	
+	if(auth ()!="artist"){
+		echo "您沒有使用此頁面的權限";
+	}
+	else{
 	$db_host = 'localhost' ;
 	$db_database = 'DBproject' ;
 	$db_username = 'root' ;
@@ -83,8 +87,6 @@
 	        <input type="reset" name="Reset" id="reset" value="清除" />
     	</p>
     </form>
-	<?php
-		
-	?>
+	<?php } ?>
 </body>
 </html>

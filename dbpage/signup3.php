@@ -21,11 +21,11 @@
 	$valid = "SELECT * FROM account WHERE account_id = '$acc';" ;
 	$valid2 = mysql_query($valid) ;
 	if ($acc == NULL or $pw == NULL or $name == NULL or ($phone == NULL and $dtime == NULL))
-		header ("Location:register2.php?type=$type&empty=1") ;
+		header ("Location:signup2.php?type=$type&empty=1") ;
 	elseif ($pw != $cpw)
-		header ("Location:register2.php?type=$type&fail=1") ;
+		header ("Location:signup2.php?type=$type&fail=1") ;
 	elseif ($same = mysql_fetch_row($valid2))
-		header ("Location:register2.php?type=$type&err=1") ;
+		header ("Location:signup2.php?type=$type&err=1") ;
 	else{
 	if ($type == artist)
 	{

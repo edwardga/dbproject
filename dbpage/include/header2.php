@@ -10,11 +10,10 @@
 
 <body>
 <div id="pack">
-	<div id="apDiv1">
+	<div id="header">
 		<img src="images/green.png" width="69" height="66" class="note" />
   		<p>玩樂生活</p>
 	</div>
 </div>
 
 	<?php require_once "include/nav2.php"; ?>
-<div id="pack2">

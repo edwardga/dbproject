@@ -3,7 +3,7 @@ html, body{background: #783143;}
 	margin: auto; padding-top: 20px;
 	width: 1010px; height: 70px;
 }
-#apDiv1 {
+#header {
 	background-color:#783143;
 	color: #FFF;  float: left;
 	padding: 20px 10px 30px 30px;
@@ -12,19 +12,19 @@ html, body{background: #783143;}
 /*	margin: 0 auto 0 0;*/
 	font-size:50px;
 }
-#apDiv1 p{
+#header p{
 	padding:0 0 0 75px;
 	font-weight: bold;
 }
-#apDiv2 {
+#nav1 {
 	width: 1010px;
 	height: 44px;
 	margin: 43px auto 0 auto;
 	font-family:"微軟正黑體", "新細明體", "標楷體";
 	background-color: #593B3B;
 }
-#apDiv2 ul{	border-collapse:collapse;}
-#apDiv2 li{
+#nav1 ul{	border-collapse:collapse;}
+#nav1 li{
 	margin-color: #FFF;
 	float: left; display: block; list-style: none;
 	width: 70px; height: 24px; text-align:center;
@@ -33,18 +33,18 @@ html, body{background: #783143;}
 	border: 1px solid #593B3B; 
 /*	border-right: 1px solid #593B3B; */
 }
-#apDiv2 a{
+#nav1 a{
 	float: left; display: block; list-style:none;
 	width: 70px; 
 	font-size:16px; color: #fff;
 	text-decoration: none;
 	font-weight: bold;
 }
-#apDiv2 li, #apDiv2 li:link, #apDiv2 li:visited, #apDiv2 li:active  {background: #593B3B;}
-#apDiv2 li:hover           {background: #261F20; border-left: 1px solid #FCDAFC; border-right: 1px solid #FCDAFC; }
-#apDiv2 a, #apDiv2 a:link, #apDiv2 li:visited, #apDiv2 li:active	{color: #FFF;}
-#apDiv2 a:hover 													{color: #FFF;}
-#apDiv3 {
+#nav1 li, #nav1 li:link, #nav1 li:visited, #nav1 li:active  {background: #593B3B;}
+#nav1 li:hover           {background: #261F20; border-left: 1px solid #FCDAFC; border-right: 1px solid #FCDAFC; }
+#nav1 a, #nav1 a:link, #nav1 li:visited, #nav1 li:active	{color: #FFF;}
+#nav1 a:hover 													{color: #FFF;}
+#logstat {
 	float:right;
 	background-color: #BF355D;
 	margin-top: 77px;
@@ -53,7 +53,7 @@ html, body{background: #783143;}
 	font-weight: bold;
 	border-radius: 10px 10px 0 0;
 }
-#apDiv3 a{
+#logstat a{
 	float: left; display: block; list-style: none;
 	width: 70px; height: 24px;
 	margin: auto;
@@ -62,7 +62,7 @@ html, body{background: #783143;}
 	font-weight: bold;
 
 }
-#apDiv3 li {
+#logstat li {
 	margin-color: #FFF;
 	float: left; display: block; list-style: none;
 	width: 70px; height: 24px; text-align:center;
@@ -71,10 +71,10 @@ html, body{background: #783143;}
 	border-left: 1px solid #593B3B; 
 	border-right: 1px solid #593B3B;
 }
-#apDiv3 li, #apDiv3 li:link, #apDiv3 li:visited, #apDiv3 li:active  {background: #593B3B;}
-#apDiv3 li:hover           {background: #261F20; border-left: 1px solid #FCDAFC; border-right: 1px solid #FCDAFC;}
-#apDiv3 a, #apDiv3 a:link, #apDiv3 li:visited, #apDiv3 li:active	{color: #FFF;}
-#apDiv3 a:hover 													{color: #FFF;}
+#logstat li, #logstat li:link, #logstat li:visited, #logstat li:active  {background: #593B3B;}
+#logstat li:hover           {background: #261F20; border-left: 1px solid #FCDAFC; border-right: 1px solid #FCDAFC;}
+#logstat a, #logstat a:link, #logstat li:visited, #logstat li:active	{color: #FFF;}
+#logstat a:hover 													{color: #FFF;}
 img.note{position:absolute; top:35px;}
 
 #apDiv4{
@@ -155,17 +155,31 @@ img.note{position:absolute; top:35px;}
 	width: 400px; height:310px;
 }
 #login table{
-	margin:90px 0 0 85px;
+	margin:80px 0 0 85px;
 	/*background-color:#261F20;*/
 	color: #FFFFFF;
 	font-size:16px;
 	font-weight:bold;
 	font-family: "微軟正黑體", "新細明體", "標楷體";
 	}
-.head{background-color:#F2B872; color:#293633; margin:0 10px 0 10px;}
+#login h1{text-align:center; color:#F00;}
+.head{background-color:#F2B872; color:#293633; margin:0 10px 0 10px; text-align:center; border-radius: 10px 10px 0 0;}
+.foot{color:#293633; margin:0 10px 0 10px; text-align:center;}
 #login a{text-decoration:none;}
 #login a, #login a:link, #login li:visited, #login li:active	{color: #FFFFFF;}
 #login a:hover 													{color: #D9B500;}
+
+.regulartable {background-color: #261F20; width:1010px;}
+	
+.regulartable table{
+	margin:auto; padding-top:50px; padding-bottom:50px;
+	color: #FFFFFF;
+	font-size:16px;
+	font-weight:bold;
+	font-family: "微軟正黑體", "新細明體", "標楷體";
+}
+.regulartable th, .regulartable tr, .regulartable td{padding: 5px;}
+.regulartable td{border: 2px solid #F00;}
 
 #footer{
 	background-color: #593B3B;

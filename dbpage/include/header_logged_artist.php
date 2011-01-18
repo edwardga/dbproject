@@ -1,3 +1,4 @@
+<?php session_start() ;?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -16,8 +17,8 @@
 	</div>
     <div id ="logstat">
 		<ul>
-    		<h1>Account_id，你好!</h1>
-        	<li><a href="signup1.php">登出</a></li>
+    		<h1><?php $_session['account'] ?>，你好!</h1>
+        	<li><a href="logout.php">登出</a></li>
     	</ul>
 	</div>
 </div>

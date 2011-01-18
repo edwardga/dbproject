@@ -17,7 +17,7 @@
     <div id ="logstat">
 		<ul>
     		<h1>Account_id，你好!</h1>
-        	<li><a href="signup1.php">登出</a></li>
+        	<li><a href="logout.php">登出</a></li>
     	</ul>
 	</div>
 </div>

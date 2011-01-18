@@ -1,4 +1,4 @@
-<?php require_once "include/header_index.php"; ?>
+<?php require_once "include/header_index.php"; ?>	
 	<?php
 		$currday = date("Y-m-d");
 		

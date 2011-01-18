@@ -86,25 +86,24 @@ img.note{position:absolute; top:35px;}
 	font-family: "微軟正黑體", "新細明體", "標楷體";
 	font-weight: bold;
 	width: 240px; color: #FFF;
-/*	background-color:#293633;*/
 	text-align: left; padding-left: 10px;
+	margin:0 0 0 100px;
 }
-/*#apDiv4 p{
-	font-size: 16px;
-	font-family: "微軟正黑體", "新細明體", "標楷體"	;
-}*/
 #apDiv4 table{
 	background-color: #783143;
-	margin: 10px 0 0 0;
-	width: 1010px;
+	margin: 20px auto 0 auto;
+	width: 800px;
 }
-#apDiv4 td{background-color: #293633;
+#apDiv4 td{
+	background-color: #293633;
 	border-top: 0px solid #783143;
-	border-bottom: 35px solid #783143;
-	padding: 50px 130px 50px 130px;
+	border-bottom: 0px solid #783143;
+	padding: 5px 5px 5px 15px;
 	color: #FFFFFF;
 	font-size: 16px;
-	font-family:"微軟正黑體", "新細明體", "標楷體";}
+	font-family:"微軟正黑體", "新細明體", "標楷體";
+}
+
 
 #nav2 {
 	width: 1010px;

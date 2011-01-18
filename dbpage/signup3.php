@@ -11,7 +11,6 @@
 	$db_host = 'localhost' ;
 	$db_database = 'DBproject' ;
 	$db_username = 'root' ;
-	
 	$connection = mysql_connect($db_host, $db_username, '');
 	if (!$connection)
 		die ("connection failed".mysql_error()) ;

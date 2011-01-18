@@ -1,8 +1,8 @@
 <?php require_once "include/auth.php"?>
 <?php 
-	if(auth()==artist)
+	if(auth()=="artist")
 		require_once "include/header_logged_artist.php";
-	elseif(auth()==audience)
+	elseif(auth()=="audience")
 		require_once "include/header_logged_aud.php";
 	else
 		require_once "include/header_index.php";

@@ -167,7 +167,7 @@ img.note{position:absolute; top:35px;}
 	font-family: "微軟正黑體", "新細明體", "標楷體";
 	}
 .login h1{text-align:center; color:#F00;}
-.head{background-color:#F2B872; color:#293633; margin:0 10px 0 10px; text-align:center; border-radius: 10px 10px 0 0;}
+.head{background-color:#F2B872; color:#293633; margin:0 10px 0 10px; text-align:center; border-radius: 10px 10px 0 0; padding:5px;}
 .foot{color:#293633; margin:0 10px 0 10px; text-align:center;}
 .login a{text-decoration:none;}
 .login a, .login a:link, .login li:visited, .login li:active	{color: #FFFFFF;}
@@ -179,14 +179,17 @@ img.note{position:absolute; top:35px;}
 	
 .regulartable table{
 	margin:auto; padding-top:50px; padding-bottom:50px;
-	color: #FFFFFF;
+	color: #293633;
 	font-size:16px;
 	font-weight:bold;
 	font-family: "微軟正黑體", "新細明體", "標楷體";
 }
-.regulartable th, .regulartable tr, .regulartable td{padding: 5px;}
-.regulartable td{border: 2px solid #F00;}
-
+.regulartable td{
+	margin:0; padding: 5px; 
+	border-collapse:collapse;
+}
+.left{background-color: #F2B872;}
+.right{background-color: #F2B872;}
 #footer{
 	background-color: #593B3B;
 	font-famaily:"微軟正黑體", "新細明體", "標楷體";

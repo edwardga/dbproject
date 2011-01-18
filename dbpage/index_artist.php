@@ -1,14 +1,6 @@
-<?php require_once "include/header_logged.php"; ?>
+<?php require_once "include/header_logged_art.php"; ?>
 
-	<div class="nav">
-	<ul>
-    	<li><a href="index.php">首頁</a></li>
-        <li><a href="">新增表演</a></li>
-        <li><a href="">我的表演</a></li>
-        <li><a href="">搜尋</a></li>
-    </ul>
-	</div>
-<div id="apDiv4">
+
 	<h1>近期演出資訊</h1>
 	<table>
 		<tr>

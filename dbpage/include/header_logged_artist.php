@@ -22,4 +22,12 @@
 	</div>
 </div>
 
-
+	<div class="nav">
+	<ul>
+    	<li><a href="index.php">首頁</a></li>
+        <li><a href="">新增表演</a></li>
+        <li><a href="">我的表演</a></li>
+        <li><a href="">搜尋</a></li>
+    </ul>
+	</div>
+<div id="apDiv4">

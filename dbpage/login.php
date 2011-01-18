@@ -1,12 +1,12 @@
-<?php require_once "include/header2.php"; ?>
-
+<?php require_once "include/header_unlog.php"; ?>
+<div id="pack2">
 	<div id="music">
     	<p>Music in your life =)</p>
     </div>
     <div class="login">
     	<table>
 			 <tr>
-            	<td colspan='2'><h1>123123123 </h1></th>
+            	<th colspan='2'><h1>123123123 </h1></th>
 			</tr>
             <tr>
             	<th colspan='2' class="head">登入</th>
@@ -25,3 +25,7 @@
             </tr>
         </table>
     </div>
+    
+</div>
+</body>
+</html>

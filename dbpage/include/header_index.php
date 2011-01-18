@@ -14,7 +14,19 @@
 		<img src="images/green.png" width="69" height="66" class="note" />
   		<p>玩樂生活</p>
 	</div>
-    <?php require_once "include/logstat.php"; ?>
+    <div id ="logstat">
+		<ul>
+    		<li><a href="login.php">登入</a></li>
+        	<li><a href="signup1.php">註冊</a></li>
+    	</ul>
+	</div>
 </div>
 
-	<?php require_once "include/nav1.php"; ?>
+	<div class="nav">
+	<ul>
+    	<li><a href="index.php">首頁</a></li>
+        <li><a href="">頁面一</a></li>
+        <li><a href="">頁面二</a></li>
+    </ul>
+	</div>
+<div id="apDiv4">

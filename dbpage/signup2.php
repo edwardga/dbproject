@@ -1,4 +1,4 @@
-<?php require_once "include/header2.php"; ?>
+<?php require_once "include/header_unlog.php"; ?>
 
 	<div class="regulartable">
     	<table>
@@ -42,4 +42,4 @@
             </tr>
         </table>
 	</div>
-
+<?php require_once "include/foot.php"; ?>

@@ -10,9 +10,19 @@
 		die ("selection failed".mysql_error()) ;
 	mysql_query("SET NAMES 'utf8';") ;
 	$name = $_GET['name'] ;
-	$date = $_GET['date'] ;
+	$date1 = $_GET['date1'] ;
+	if ($date1 == NULL)
+		$date1 = "'0000-00-00'" ;
+	else 
+		$date1 = "'".$date1."'" ;
+	$date2 = $_GET['date2'] ;
+	if ($date2 == NULL)
+		$date2 = "'9999-99-99'" ;
+	else 
+		$date2 = "'".$date2."'" ;
 	$style = $_GET['style'] ;
-	$search = "SELECT * FROM `show` , `showstyle`  WHERE `show`.style_id = `showstyle`.id AND show.name LIKE '%$name%' AND day LIKE '%$date%' AND showstyle.name LIKE '%$style%' ;" ;
+	$search = "SELECT * FROM `show` , `showstyle`  WHERE `show`.style_id = `showstyle`.id AND show.name LIKE '%$name%' AND day > $date1 AND day < $date2 AND showstyle.name LIKE '%$style%' ;" ;
+	echo $search ;
 	$query = mysql_query($search) ; 
 	echo "<table border = 1>" ;
 	echo "<tr><td>表演名稱</td><td>日期</td><td>時間</td><td>地點</td><td>表演風格</td><td>售票系統</td></tr>" ;

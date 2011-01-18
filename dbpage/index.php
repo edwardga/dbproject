@@ -26,9 +26,10 @@
 			$show = "SELECT show.name, show.day, location.name, sellsystem.name  
 					 FROM `show`, `location`, `sellsystem`
 					 WHERE show.l_id=location.id AND show.sell_id=sellsystem.id
-					 ORDER BY show.day DESC;" ;
+					 ORDER BY show.day ;" ;
 			$show_result = mysql_query($show);
-			while ($result_row = mysql_fetch_row(($show_result)))
+			$i=1;
+			while ($i<=8 && $result_row = mysql_fetch_row($show_result) )
 			{
 				if($result_row[1]>=$currday){
 					echo "<tr>" ;
@@ -38,6 +39,7 @@
 					echo "<td>".$result_row[2]."</td>" ;
 					echo "<td>".$result_row[3]."</td>" ;
 					echo "</tr>";
+					$i = $i + 1;
 				}
 			}
 		?>

@@ -26,7 +26,7 @@ html, body{background: #783143;}
 .nav ul{	border-collapse:collapse;}
 .nav li{
 	margin-color: #FFF;
-	float: left; display: block; list-style: none;
+	float: right; display: block; list-style: none;
 	width: 70px; height: 24px; text-align:center;
 	padding: 9px 6px 9px 6px;
 	font-size:16px; color: #fff;
@@ -34,7 +34,7 @@ html, body{background: #783143;}
 /*	border-right: 1px solid #593B3B; */
 }
 .nav a{
-	float: left; display: block; list-style:none;
+	float: right; display: block; list-style:none;
 	width: 70px; 
 	font-size:16px; color: #fff;
 	text-decoration: none;
@@ -46,12 +46,11 @@ html, body{background: #783143;}
 .nav a:hover 													{color: #FFF;}
 #logstat {
 	float:right;
-	background-color: #BF355D;
+	/*background-color: #593B3B;*/
 	margin-top: 77px;
-	width: 168px; top: 102px; left: 946px;
+	top: 102px; left: 946px;
 	font-family:"微軟正黑體", "新細明體", "標楷體";
 	font-weight: bold;
-	border-radius: 10px 10px 0 0;
 }
 #logstat a{
 	float: left; display: block; list-style: none;
@@ -71,6 +70,12 @@ html, body{background: #783143;}
 	border-left: 1px solid #593B3B; 
 	border-right: 1px solid #593B3B;
 }
+#logstat h1{
+	background-color:: #783143;
+	float:left; padding:6px 6px 0 0;
+	font-family:"微軟正黑體", "新細明體", "標楷體";
+	font-size:16px;
+	font-weight:bold;}
 #logstat li, #logstat li:link, #logstat li:visited, #logstat li:active  {background: #593B3B;}
 #logstat li:hover           {background: #261F20; border-left: 1px solid #FCDAFC; border-right: 1px solid #FCDAFC;}
 #logstat a, #logstat a:link, #logstat li:visited, #logstat li:active	{color: #FFF;}

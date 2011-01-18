@@ -12,7 +12,7 @@
 	function auth ()
 	{
 		if (!$_SESSION['account'])
-			return 0 ;
+			return NULL ;
 		else
 		{
 			$query = "SELECT type FROM account WHERE account_id = '$_SESSION[account]';" ;

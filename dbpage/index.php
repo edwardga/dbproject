@@ -31,9 +31,9 @@
             <td class="head">售票系統</td>
         </tr>
 		<?php
-			$show = "SELECT show.name, show.day, location.name, sellsystem.name  
-					 FROM `show`, `location`, `sellsystem`
-					 WHERE show.l_id=location.id AND show.sell_id=sellsystem.id
+			$show = "SELECT show.name, show.day, location.name, sellsystem.name, artist.name  
+					 FROM `show`, `location`, `sellsystem`, `artist`
+					 WHERE show.l_id=location.id AND show.sell_id=sellsystem.id AND show.ar_id = artist.id
 					 ORDER BY show.day ;" ;
 			$show_result = mysql_query($show);
 			$i=1;
@@ -42,7 +42,7 @@
 				if($result_row[1]>=$currday){
 					echo "<tr>" ;
 					echo "<td>".$result_row[0]."</td>" ;
-					echo "<td></td>";
+					echo "<td>".$result_row[4]."</td>";
 					echo "<td>".$result_row[1]."</td>" ;
 					echo "<td>".$result_row[2]."</td>" ;
 					echo "<td>".$result_row[3]."</td>" ;

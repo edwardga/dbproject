@@ -22,7 +22,7 @@
 		if (!$selection)
 			die ("selection failed".mysql_error()) ; 
 		mysql_query("SET NAMES 'utf8'"); ?>
-        <form method = 'post' action = 'newShow2.php'>
+        <form method = 'post' action = 'createshow.php'>
 		<table>
     		<th colspan='2' class="head">新增表演</th>
     		<tr><td class="left">表演名稱</td>

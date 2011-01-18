@@ -181,8 +181,8 @@ img.note{position:absolute; top:35px;}
 	font-size:16px;
 }
 .login a{text-decoration:none;}
-.login a, .login a:link, .login li:visited, .login li:active	{color: #293633;}
-.login a:hover 													{color: #000000;}
+.login a, .login a:link, .login li:visited, .login li:active	{color: #F00;}
+.login a:hover 													{color: #293633;}
 
 .regulartable {
 	margin:20px auto 20px auto;

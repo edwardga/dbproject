@@ -11,7 +11,10 @@
 		<td>表演名稱</td><td><input name = 'name' type = 'text'></td>
     </tr>
     <tr>
-    	<td>日期</td><td><input name = 'date' type = 'text'>(YYYY-MM-DD)</td>
+    	<td>日期</td><td><input name = 'date1' type = 'text'>(YYYY-MM-DD)</td>
+    </tr>
+    <tr>
+    	<td>至</td><td><input name = 'date2' type = 'text'>(YYYY-MM-DD)</td>
     </tr>
     <tr>
 	    <td>風格</td><td><input name = 'style' type = 'text'></td>

@@ -97,13 +97,12 @@ img.note{position:absolute; top:35px;}
 #apDiv4 table{
 	background-color: #783143;
 	margin: 20px auto 0 auto;
-	width: 800px;
 }
 #apDiv4 td{
 	background-color: #293633;
 	border-top: 0px solid #783143;
 	border-bottom: 0px solid #783143;
-	padding: 5px 5px 5px 15px;
+	padding: 5px 20px 5px 20px;
 	color: #FFFFFF;
 	font-size: 16px;
 	font-family:"微軟正黑體", "新細明體", "標楷體";
@@ -167,8 +166,20 @@ img.note{position:absolute; top:35px;}
 	font-family: "微軟正黑體", "新細明體", "標楷體";
 	}
 .login h1{text-align:center; color:#F00;}
-.head{background-color:#F2B872; color:#293633; margin:0 10px 0 10px; text-align:center; border-radius: 10px 10px 0 0; padding:5px;}
-.foot{background-color:#F2B872; color:#293633; margin:0 10px 0 10px; text-align:center; border-radius: 0 0 10px 10px; padding:5px;}
+.head{
+	background-color:#F2B872; 
+	color:#293633; margin:0 10px 0 10px; 
+	text-align:center; padding:5px;
+	border-radius: 10px 10px 0 0;
+	font-size:16px;
+}
+.foot{
+	background-color:#F2B872; 
+	color:#293633; margin:0 10px 0 10px; 
+	text-align:center; padding:5px;
+	border-radius: 0 0 10px 10px;
+	font-size:16px;
+}
 .login a{text-decoration:none;}
 .login a, .login a:link, .login li:visited, .login li:active	{color: #293633;}
 .login a:hover 													{color: #000000;}
@@ -189,8 +200,8 @@ img.note{position:absolute; top:35px;}
 	border-collapse:collapse;
 }
 .regulartable h1{color: #F00; text-align:center;}
-.left{background-color: #F2B872; color: #293633;}
-.right{background-color: #F2B872; color: #293633;}
+.left{background-color: #F2B872; color: #293633; text-align:center;}
+.right{background-color: #F2B872; color: #293633; text-align:center;}
 #footer{
 	background-color: #593B3B;
 	font-famaily:"微軟正黑體", "新細明體", "標楷體";

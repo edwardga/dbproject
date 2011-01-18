@@ -11,9 +11,14 @@
 		die ("selection failed".mysql_error()) ;
 	function auth ()
 	{
-	$query = "SELECT type FROM account WHERE account_id = '$_SESSION[account]';" ;
-	$result = mysql_query($query) ;
-	$fetch = mysql_fetch_row($result) ;
-	return $fetch[0] ;
+		if (!$_SESSION['account'])
+			return 0 ;
+		else
+		{
+			$query = "SELECT type FROM account WHERE account_id = '$_SESSION[account]';" ;
+			$result = mysql_query($query) ;
+			$fetch = mysql_fetch_row($result) ;
+			return $fetch[0] ;
+		}
 	}
 ?>

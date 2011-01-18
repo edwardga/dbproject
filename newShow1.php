@@ -6,20 +6,25 @@
 </head>
 
 <body>
+	
 	<?php
-	if (isset($_GET["empty"]))
-		echo 'No attribute can be empty!' ;	
-		
+	$account = $_SESSION['account'];
+	
 	$db_host = 'localhost' ;
 	$db_database = 'DBproject' ;
 	$db_username = 'root' ;
 	$connection = mysql_connect($db_host, $db_username, '');
+	
 	if (!$connection)
 		die ("connection failed".mysql_error()) ;
 	$selection = mysql_select_db($db_database) ;
 	if (!$selection)
 		die ("selection failed".mysql_error()) ;
 	mysql_query("SET NAMES 'utf8'");
+	
+	
+	if (isset($_GET["empty"]))
+		echo 'No attribute can be empty!';
 	?>
 	<h1>新增表演</h1>
     <form method = 'post' action = 'newShow2.php'>

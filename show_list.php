@@ -24,6 +24,7 @@
     	<table>
     	<tr>
         	<td>表演名稱</td>
+            <td>表演者</td>
             <td>日期</td>
             <td>地點</td>
             <td>售票系統</td>
@@ -39,6 +40,7 @@
 //				if($result_row[1]>=$currday){
 					echo "<tr>" ;
 					echo "<td>".$result_row[0]."</td>" ;
+					echo "<td></td>";
 					echo "<td>".$result_row[1]."</td>" ;
 					echo "<td>".$result_row[2]."</td>" ;
 					echo "<td>".$result_row[3]."</td>" ;

@@ -52,5 +52,5 @@
 	$check = "SELECT * FROM account WHERE account_id = '$acc' AND password = '$pw' " ;
 	$success = mysql_query($check) ; 
 	if ($result_rowc = mysql_fetch_row($success))
-		echo '註冊成功' ;}
+		header("Location:index.php") ;}
 ?>

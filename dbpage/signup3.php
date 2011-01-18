@@ -12,6 +12,7 @@
 	$db_database = 'DBproject' ;
 	$db_username = 'root' ;
 	$connection = mysql_connect($db_host, $db_username, '');
+	mysql_query("SET NAMES 'utf8'");
 	if (!$connection)
 		die ("connection failed".mysql_error()) ;
 	$selection = mysql_select_db($db_database) ;

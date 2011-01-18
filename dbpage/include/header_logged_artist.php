@@ -17,7 +17,27 @@
 	</div>
     <div id ="logstat">
 		<ul>
-            <h1><?php echo $_SESSION['account'] ?>，你好!</h1>
+            <?php 
+				$db_host = 'localhost' ;
+				$db_database = 'DBproject' ;
+				$db_username = 'root' ;
+				$connection = mysql_connect($db_host, $db_username, '');
+				if (!$connection)
+					die ("connection failed".mysql_error()) ;
+				$selection = mysql_select_db($db_database) ;
+				if (!$selection)
+					die ("selection failed".mysql_error()) ;
+				mysql_query("SET NAMES 'utf8'");
+				$accountid = $_SESSION['account'];
+				$name = "SELECT artist.name
+						 FROM `account` , `artist` 
+						 WHERE `account_id` = '$accountid' AND 
+						 	   `artist`.`id` = `account`.`type_id`;";
+				$name_r = mysql_query($name);
+				$name_r_row = mysql_fetch_row($name_r);
+				
+			?>
+            <h1><?php echo $name_r_row[0] ?>，你好!</h1>
         	<li><a href="logout.php">登出</a></li>
     	</ul>
 	</div>

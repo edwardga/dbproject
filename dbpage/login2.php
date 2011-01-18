@@ -1,4 +1,5 @@
 <?php
+	session_start() ;
 	$db_host = 'localhost' ;
 	$db_database = 'DBproject' ;
 	$db_username = 'root' ;
@@ -15,8 +16,8 @@
 	$result = mysql_query($query) ;
 	if ($result_row = mysql_fetch_row(($result)))
 	{
-		echo '登入成功<br />' ;
-		$session['account'] = $acc ;
+		$_SESSION['account'] = $acc ;
+		header ("Location:temp.php") ;
 	}
 	else
         header ("Location:login1.php?fail=1") ;

@@ -16,15 +16,10 @@
 	</div>
     <div id ="logstat">
 		<ul>
-    		<li><a href="login.php">登入</a></li>
-        	<li><a href="signup1.php">註冊</a></li>
+    		<h1>Account_id，你好!</h1>
+        	<li><a href="signup1.php">登出</a></li>
     	</ul>
 	</div>
 </div>
 
-	<div class="nav">
-	<ul>
-    	<li><a href="index.php">首頁</a></li>
-    </ul>
-	</div>
-<div id="apDiv4">
+

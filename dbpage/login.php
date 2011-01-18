@@ -28,7 +28,7 @@
             <tr>
             	<td class="left"><input name = 'submit' type = 'submit' /></td>
                 </form>
-                <td class="right"><a href="signup1.php"/>請點選這裡註冊新帳號</td>
+                <td class="right">請點選<a href="signup1.php">這裡</a>註冊新帳號</td>
             </tr>
         </table>
     </div>

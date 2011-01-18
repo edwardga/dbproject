@@ -1,4 +1,4 @@
-<?php require_once "include/header_logged_art.php"; ?>
+<?php require_once "include/header_logged_artist.php"; ?>
 
 
 	<h1>近期演出資訊</h1>

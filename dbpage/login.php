@@ -26,7 +26,7 @@
             	<td class="right"><input name = 'password' type = 'password' /></td>
             </tr>
             <tr>
-            	<td><input name = 'submit' type = 'submit' /></td>
+            	<td class="left"><input name = 'submit' type = 'submit' /></td>
                 </form>
                 <td class="right"><a href="signup1.php"/>請點選這裡註冊新帳號</td>
             </tr>

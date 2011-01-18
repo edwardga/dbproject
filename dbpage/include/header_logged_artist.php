@@ -17,8 +17,7 @@
 	</div>
     <div id ="logstat">
 		<ul>
-    		<?php $account_id = $_session[account]?>
-            <h1><?php echo $_session[account] ?>，你好!</h1>
+            <h1><?php echo $_SESSION['account'] ?>，你好!</h1>
         	<li><a href="logout.php">登出</a></li>
     	</ul>
 	</div>

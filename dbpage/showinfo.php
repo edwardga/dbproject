@@ -14,7 +14,7 @@
 		$show = mysql_fetch_row($show2) ;
 ?>
 </div>
-        <div class = "indextable">
+        <div class = "showinfo">
         <table>
     		<tr>
             <th colspan="2" class="head"><?php echo $show[1]; ?></th>
@@ -74,4 +74,8 @@
         </tr>
         </tr>
         </table>
+<<<<<<< HEAD
+        
+=======
+>>>>>>> c1fc536f002f6906926a143ff97260679be97a6d
 <?php require_once "include/foot.php"; ?>

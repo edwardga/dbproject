@@ -74,3 +74,4 @@
         </tr>
         </tr>
         </table>
+<?php require_once "include/foot.php"; ?>

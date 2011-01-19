@@ -34,19 +34,24 @@
 	{
 		$display1 = "SELECT * FROM `show` WHERE id = '$id[$i]'" ;
 		$display2 = mysql_query($display1) ;
-		$display = mysql_fetch_row($display2) ;
+		if ($display2)
+			$display = mysql_fetch_row($display2) ;
 		$loc1 = "SELECT name FROM location WHERE id = $display[4]" ;
 		$loc2 = mysql_query($loc1) ;
-		$loc = mysql_fetch_row($loc2) ;
+		if ($loc2)
+			$loc = mysql_fetch_row($loc2) ;
 		$style1 = "SELECT name FROM showstyle WHERE id = $display[5]" ;
 		$style2 = mysql_query($style1) ;
-		$style = mysql_fetch_row($style2) ;
+		if ($style2)
+			$style = mysql_fetch_row($style2) ;
 		$sell1 = "SELECT name FROM sellsystem WHERE id = $display[6]" ;
 		$sell2 = mysql_query($sell1) ;
-		$sell = mysql_fetch_row($sell2) ;
+		if ($sell2)
+			$sell = mysql_fetch_row($sell2) ;
 		$art1 = "SELECT name FROM artist WHERE id = $display[7]" ;
 		$art2 = mysql_query($art1) ;
-		$art = mysql_fetch_row($art2) ;
+		if ($art2)
+			$art = mysql_fetch_row($art2) ;
 		echo "<tr><td>$display[1]</td><td>$display[2]</td><td>$display[3]</td><td>$loc[0]</td><td>$sell[0]</td><td>$style[0]</td><td>$art[0]</td>";
 		echo "<td><select name='grade[$i]'>
 				<option value =5>★★★★★

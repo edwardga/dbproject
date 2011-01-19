@@ -14,20 +14,13 @@
 ?>
 	</div>
 	<div class='indextable'>
-	<form method = 'get' action = 'search1.php'>
+	<form method = 'get' action = 'searchsong1.php'>
 	<table>
 	<th colspan='2' class='head'>搜尋</th>
 		<tr>
-			<td>表演名稱</td><td><input name = 'name' type = 'text'></td>
+			<td>歌曲名稱</td><td><input name = 'name' type = 'text'></td>
 	    </tr>
-	    <tr>
-	    	<td>日期(YYYY-MM-DD)</td><td><input name = 'date1' type = 'text'></td>
-	    </tr>
-	    <tr>
-	    	<td>至(YYYY-MM-DD)</td><td><input name = 'date2' type = 'text'></td>
-	    </tr>
-	    <tr>
-		    <td>風格</td><td><input name = 'style' type = 'text'></td>
+	    	<td>風格</td><td><input name = 'style' type = 'text'></td>
 	    </tr>
         <tr>
 		    <td>表演者</td><td><input name = 'artist' type = 'text'></td>

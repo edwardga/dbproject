@@ -36,7 +36,6 @@
 		$ar_id = mysql_query("SELECT `artist`.`id` FROM `artist`,`account` WHERE `account`.`account_id` ='$accountid' AND `account`.`type_id` = `artist`.`id`;");
 		$ar_id_r = mysql_fetch_row($ar_id); 
 		
-//		echo $ar_id_r[0];
 		$newShow = "INSERT INTO `dbproject`.`show` (`id`, `name`, `day`, `time`, `l_id`, `style_id`, `sell_id`, `ar_id`) VALUES (NULL, '$s_n', '$s_d', '$s_t', '$s_l', '$s_sty', '$s_sell', '$ar_id_r[0]');";
 		$newShow_i = mysql_query($newShow) ;
 

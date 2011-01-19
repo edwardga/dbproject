@@ -1,7 +1,10 @@
 <?php
 	include_once('include/auth.php') ;
 	if(auth()=="artist")
+	{
 		require_once "include/header_logged_artist.php";
+		//echo "<h1>您沒有使用此頁面的權力</h1>" ;
+	}
 	elseif(auth()=="audience")
 		require_once "include/header_logged_aud.php";
 	else
@@ -30,51 +33,33 @@
 <div class = 'indextable'>
 <table>
 <tr>
-	<th class='head'>表演名稱</td>
-    <th class='head'>日期</td>
-    <th class='head'>時間</td>
-    <th class='head'>地點</td>
-    <th class='head'>表演風格</td>
-    <th class='head'>售票系統</td>
+	<th class='head'>歌曲名稱</td>
+    <th class='head'>歌曲風格</td>
     <th class='head'>分數</td>
     <th class='head'>表演者</td>
 </tr>
 <?php
-	$display = "SELECT * FROM `myfavorite` WHERE account_id ='$_SESSION[account]'" ;
+	$display = "SELECT * FROM `myfavsong` WHERE account_id ='$_SESSION[account]'" ;
 	$display2 = mysql_query($display) ;
 	$temp = 0;
-
-		
 	while ($result = mysql_fetch_row($display2))
 	{
 		$temp = 1;
-		$show1 = "SELECT * FROM `show` WHERE id='$result[2]'";
-		$show2 = mysql_query($show1) ;
-		if ($show2)
-			$show = mysql_fetch_row($show2) ;
-		$loc1 = "SELECT name FROM location WHERE id = $show[4]" ;
-		$loc2 = mysql_query($loc1) ;
-		if ($loc2)
-			$loc = mysql_fetch_row($loc2) ;
-		$style1 = "SELECT name FROM showstyle WHERE id = $show[5]" ;
+		$song1 = "SELECT * FROM `song` WHERE id='$result[2]'";
+		$song2 = mysql_query($song1) ;
+		if ($song2)
+			$song = mysql_fetch_row($song2) ;
+		$style1 = "SELECT name FROM showstyle WHERE id = $song[2]" ;
 		$style2 = mysql_query($style1) ;
 		if ($style2)
 			$style = mysql_fetch_row($style2) ;
-		$sell1 = "SELECT name FROM sellsystem WHERE id = $show[6]" ;
-		$sell2 = mysql_query($sell1) ;
-		if ($sell2)
-			$sell = mysql_fetch_row($sell2) ;
-		$art1 = "SELECT name FROM artist WHERE id = $show[7]" ;
+		$art1 = "SELECT name FROM artist WHERE id = $song[4]" ;
 		$art2 = mysql_query($art1) ;
 		if ($art2)
 			$art = mysql_fetch_row($art2) ;
 		echo "<tr>
-				<td><a href='showinfo.php?id=$show[0]'>$show[1]</a></td>
-				<td>$show[2]</td>
-				<td>$show[3]</td>
-				<td>$loc[0]</td>
-				<td>$style[0]</td>
-				<td>$sell[0]</td><td>" ;
+				<td>$song[1]</a></td>
+				<td>$style[0]</td><td>" ;
 		if ($result[3]==1)
 			echo "★☆☆☆☆" ;
 		elseif ($result[3]==2)
@@ -86,9 +71,9 @@
 		elseif ($result[3]==5)
 			echo "★★★★★" ;
 		echo	"</td><td>$art[0]</td></tr>" ;
-	}
+		}
 	if ($temp == 0)
-		echo "<td colspan='8' style='text-align:center'>您沒有將表演加入我的最愛中" ;
+		echo "<td colspan='8' style='text-align:center'>您沒有將歌曲加入我的最愛中" ;
 ?>
 </table>
 </div>

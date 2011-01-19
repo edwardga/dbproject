@@ -47,8 +47,10 @@
 <div class="nav">
 	<ul>
     	<li><a href="index.php">首頁</a></li>
-        <li><a href="myfavorite.php">我的最愛</a></li>
-        <li><a href="search.php">搜尋</a></li>
+        <li><a href="myfavorite.php">最愛表演</a></li>
+        <li><a href="myfavsong.php">最愛歌曲</a></li>
+        <li><a href="search.php">搜尋表演</a></li>
+        <li><a href="searchsong.php">搜尋歌曲</a></li>
     </ul>
 	</div>
 <div class="apDiv4">

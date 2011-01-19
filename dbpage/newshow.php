@@ -25,8 +25,11 @@
         <form method = 'post' action = 'createshow.php'>
         </div>
         <div class = 'indextable'>
+       
 		<table>
-    		<th colspan='2' class="head">新增表演</th>
+    		<th colspan='2' class="head">新增表演 
+				<?php if (isset($_GET["empty"]))
+					  echo '(需填入名稱、日期、時間)' ;	?></th>
     		<tr><td class="left">表演名稱</td>
             	<td><input type="text" name="name" id="name"  /></td></tr>
         	<tr><td class="left">表演日期(yyyy/mm/dd)</td>

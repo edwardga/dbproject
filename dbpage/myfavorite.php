@@ -42,8 +42,12 @@
 <?php
 	$display = "SELECT * FROM `myfavorite` WHERE account_id ='$_SESSION[account]'" ;
 	$display2 = mysql_query($display) ;
+	$temp = 0;
+
+		
 	while ($result = mysql_fetch_row($display2))
 	{
+		$temp = 1;
 		$show1 = "SELECT * FROM `show` WHERE id='$result[2]'";
 		$show2 = mysql_query($show1) ;
 		if ($show2)
@@ -74,6 +78,8 @@
 				<td>$result[3]</td>
 				<td>$art[0]</td></tr>" ;
 	}
+	if ($temp == 0)
+		echo "<td colspan='8' style='text-align:center'>您沒有將表演加入我的最愛中" ;
 ?>
 </table>
 </div>

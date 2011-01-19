@@ -6,6 +6,7 @@
 		require_once "include/header_logged_aud.php";
 	else
 		require_once "include/header_index.php";
+	mysql_query("SET NAMES 'utf8'");
 	$id = $_GET["id"];
  	$show1 = "SELECT * FROM `show` WHERE id = '$id' ; " ;
 	$show2 = mysql_query($show1) ;

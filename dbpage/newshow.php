@@ -30,9 +30,9 @@
     		<tr><td class="left">表演名稱</td>
             	<td><input type="text" name="name" id="name"  /></td></tr>
         	<tr><td class="left">表演日期(yyyy/mm/dd)</td>
-            	<td><input type="text" name="day" id="day" />(yyyymmdd)</td></tr>
+            	<td><input type="text" name="day" id="day" /></td></tr>
         	<tr><td class="left">表演時間(hh:mm)</td>
-            	<td><input type="text" name="stime" id="stime" />(hh:mm)</td></tr>
+            	<td><input type="text" name="stime" id="stime" /></td></tr>
         	<tr><td class="left">表演地點</td>
             	<td><select  name="location" id="location" >
             	<?php

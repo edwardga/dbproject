@@ -121,6 +121,9 @@ img.note{position:absolute; top:35px;}
 	word-break:break-all;
 	text-align:center;
 }
+.scrolltable a, .scrolltable a:link, .scrolltable a:visited, .scrolltable a:active	{color: #FFFFFF;}
+.scrolltable a:hover 													        {color: #FFFFFF;}
+
 .indextable{
 	margin: 5px auto 0 auto;
 	max-width:1000px;

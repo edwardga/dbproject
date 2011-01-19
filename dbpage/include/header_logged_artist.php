@@ -49,7 +49,7 @@
     	<li><a href="index.php">首頁</a></li>
         <li><a href="newshow.php">新增表演</a></li>
         <li><a href="myshow.php">我的表演</a></li>
-        <li><a href="">搜尋</a></li>
+        <li><a href="search.php">搜尋</a></li>
     </ul>
 	</div>
 <div class="apDiv4">

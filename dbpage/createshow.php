@@ -17,7 +17,11 @@
 		$s_l = $_POST[location];
 		$s_sty = $_POST[showstyle];
 		$s_sell = $_POST[sellsystem];
+		if ($s_n == NULL && $s_d == NULL && $s_t == NULL){
+			header ("Location:newshow.php?empty=1") ;
+		}
 
+		else{
 		$db_host = 'localhost' ;
 		$db_database = 'DBproject' ;
 		$db_username = 'root' ;
@@ -89,6 +93,7 @@
         </tr>
         </table>
         
-<?php }?>
+<?php	} 
+	}?>
 
 <?php require_once "include/foot.php"; ?>

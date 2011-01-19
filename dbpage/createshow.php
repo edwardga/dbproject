@@ -47,7 +47,8 @@
 				$newIns_i = mysql_query($newIns);
 			}
 		}?>
-		
+		</div>
+        <div class = "indextable">
         <table>
     		<th colspan='2' class="head">已新增表演</th>
         	<tr>

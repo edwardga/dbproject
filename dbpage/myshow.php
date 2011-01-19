@@ -39,17 +39,16 @@
         </tr>
         <?php
 			$currday = date("Y-m-d");
-			$show = "SELECT show.name, show.day, location.name, sellsystem.name  
+			$show = "SELECT show.name, show.day, location.name, sellsystem.name, show.id 
 					 FROM `show`, `location`, `sellsystem`, `artist`
 					 WHERE show.l_id=location.id AND show.sell_id=sellsystem.id AND show.ar_id = artist.id AND artist.id = '$ar_id_r[0]'
 				 ORDER BY show.day ;" ;
 			$show_result = mysql_query($show);
-		
         while ($result_row = mysql_fetch_row($show_result) )
 		{
 			if($result_row[1]>=$currday){
 					echo "<tr>" ;
-					echo "<td>".$result_row[0]."</td>" ;
+					echo "<td><a href='showinfo.php?id=$result_row[4]'>".$result_row[0]."</a></td>" ;
 					echo "<td>".$result_row[1]."</td>" ;
 					echo "<td>".$result_row[2]."</td>" ;
 					echo "<td>".$result_row[3]."</td>" ;
@@ -73,7 +72,7 @@
         </tr>
         <?php
 			$currday = date("Y-m-d");
-			$show = "SELECT show.name, show.day, location.name, sellsystem.name  
+			$show = "SELECT show.name, show.day, location.name, sellsystem.name, show.id  
 					 FROM `show`, `location`, `sellsystem`, `artist`
 					 WHERE show.l_id=location.id AND show.sell_id=sellsystem.id AND show.ar_id = artist.id AND artist.id = '$ar_id_r[0]'
 				 ORDER BY show.day ;" ;
@@ -83,7 +82,7 @@
 		{
 			if($result_row[1]<$currday){
 					echo "<tr>" ;
-					echo "<td>".$result_row[0]."</td>" ;
+					echo "<td><a href='showinfo.php?id=$result_row[4]'>".$result_row[0]."</a></td>" ;
 					echo "<td>".$result_row[1]."</td>" ;
 					echo "<td>".$result_row[2]."</td>" ;
 					echo "<td>".$result_row[3]."</td>" ;

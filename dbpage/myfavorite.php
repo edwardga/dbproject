@@ -64,7 +64,15 @@
 		$art2 = mysql_query($art1) ;
 		if ($art2)
 			$art = mysql_fetch_row($art2) ;
-		echo "<tr><td>$show[1]</td><td>$show[2]</td><td>$show[3]</td><td>$loc[0]</td><td>$style[0]</td><td>$sell[0]</td><td>$result[3]</td><td>$art[0]</td></tr>" ;
+		echo "<tr>
+				<td><a href='showinfo.php?id=$show[0]'>$show[1]</a></td>
+				<td>$show[2]</td>
+				<td>$show[3]</td>
+				<td>$loc[0]</td>
+				<td>$style[0]</td>
+				<td>$sell[0]</td>
+				<td>$result[3]</td>
+				<td>$art[0]</td></tr>" ;
 	}
 ?>
 </table>

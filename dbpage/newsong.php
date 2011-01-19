@@ -47,7 +47,7 @@
 				?></select></td></tr>
          	<tr>
             	<td class="left">敘述</td>
-            	<td><input type="text" name="content" id="content"  /></td></tr>
+            	<td><textarea type="text" name="content" cols="50"rows="5" style="resize:none" id="content"></textarea></td></tr>
             </tr>
             <tr>
                 <th colspan="2" class="foot"><input type="submit" name="submit" id="submit" value="新增" />

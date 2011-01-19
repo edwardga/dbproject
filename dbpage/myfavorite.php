@@ -92,5 +92,6 @@
 ?>
 </table>
 </div>
+<?php require_once "include/foot.php"; ?>
 </body>
 </html>

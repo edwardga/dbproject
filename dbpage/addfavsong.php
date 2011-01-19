@@ -61,3 +61,4 @@
 		echo "<tr><td style = 'text-align:center' colspan = '5' >您並未選擇任何歌曲</td>" ;
 	echo "</form></table>" ;
 ?>
+<?php require_once "include/foot.php"; ?>

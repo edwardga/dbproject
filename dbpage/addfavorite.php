@@ -68,3 +68,4 @@
 		echo "<tr><td style = 'text-align:center' colspan = '8' >您並未選擇任何表演</td>" ;
 	echo "</form></table>" ;
 ?>
+<?php require_once "include/foot.php"; ?>

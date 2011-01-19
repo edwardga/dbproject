@@ -1,7 +1,8 @@
 <?php require_once "include/header_logged_artist.php"; ?>
 
-
 	<h1>近期演出資訊</h1>
+</div>
+<div class="indextable">
 	<table>
 		<tr>
         	<td class="head">表演名稱</td>

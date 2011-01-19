@@ -2,6 +2,8 @@
 
 
 	<h1>未來表演</h1>
+</div>
+<div class="scrolltable">
 	<table>
 		<tr>
         	<td class="head">表演名稱</td>
@@ -11,7 +13,7 @@
             <td class="head">售票系統</td>
         </tr>
         <tr>
-        	<td>2131233123</td>
+        	<td>2131233131231</td>
         	<td></td>
             <td></td>
             <td></td>
@@ -70,6 +72,8 @@
 </div>
 <div class="apDiv4">
 	<h1>過去表演</h1>
+</div>
+<div class="scrolltable">
     <table>
 		<tr>
         	<td class="head">表演名稱</td>

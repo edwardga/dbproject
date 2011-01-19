@@ -15,7 +15,7 @@
 		$s_sty = $_POST[showstyle];
 		$s_c = $_POST[content];
 		if ($s_n == NULL)
-			header ("Location:newshow.php?empty=1") ;
+			header ("Location:newsong.php?empty=1") ;
 		
 		else{
 		$db_host = 'localhost' ;
@@ -31,8 +31,8 @@
 		mysql_query("SET NAMES 'utf8'"); 
 		$ar_id = mysql_query("SELECT `artist`.`id` FROM `artist`,`account` WHERE `account`.`account_id` ='$accountid' AND `account`.`type_id` = `artist`.`id`;");
 		$ar_id_r = mysql_fetch_row($ar_id); 
-		$newShow = "INSERT INTO `dbproject`.`song` (`id`, `name`, `style_id`, `content`, `ar_id`) VALUES (NULL, '$s_n', '$s_sty', '$s_c', '$ar_id_r[0]');";
-		$newShow_i = mysql_query($newShow) ;
+		$newSong = "INSERT INTO `dbproject`.`song` (`id`, `name`, `style_id`, `content`, `ar_id`) VALUES (NULL, '$s_n', '$s_sty', '$s_c', '$ar_id_r[0]');";
+		$newSong_i = mysql_query($newSong) ;
 
 		}?>
 		</div>

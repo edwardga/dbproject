@@ -100,7 +100,7 @@ img.note{position:absolute; top:35px;}
 }
 .scrolltable{
 	margin: 5px auto 0 auto;
-	max-height:200px; overflow:scroll;
+	max-height:200px; overflow:auto;
 	max-width:950px;
 	padding-bottom:5px;
 }
@@ -154,23 +154,6 @@ img.note{position:absolute; top:35px;}
 	margin: 20px auto 0 auto;
 	padding-bottom:5px;
 }
-/*.showinfo table{
-	background-color: #783143;
-	max-width: 1000px;
-}
-.showinfo td{
-	background-color: #293633;
-	border-top: 0px solid #783143;
-	border-bottom: 0px solid #783143;
-	padding: 5px 20px 5px 20px;
-	color: #FFFFFF;
-	font-size: 16px;
-	font-family:"微軟正黑體", "新細明體", "標楷體";
-	word-break:break-all; 
-}
-.showinfo h2{color:#F00;}
-.showinfo a, .showinfo a:link, .showinfo a:visited, .showinfo a:active	{color: #FFFFFF;}
-.showinfo a:hover*/
 
 .showinfo2{
 	float:left;
@@ -191,6 +174,9 @@ img.note{position:absolute; top:35px;}
 	word-break:break-all; 
 	text-align:center;
 }
+.showinfo2 a, .showinfo2 a:link, .showinfo2 a:visited, .showinfo2 a:active	{color: #FFFFFF;}
+.showinfo2 a:hover 													{color: #FFFFFF;}
+
 #comment{
 	float:left; clear:left;
 	margin: 30px 0 0 50px;
@@ -213,6 +199,7 @@ img.note{position:absolute; top:35px;}
 	float:right;
 	margin: 3px 50px 0 0;
 }
+
 #showcomment2 table{
 	background-color: #783143;
 	width: 370px;

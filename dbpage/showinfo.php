@@ -113,7 +113,7 @@
         	<th colspan="2" class="head">評論</th>
             <tr>
             	<td class="left">標題</td>
-                <td class="right"><input name = 'title' type = 'text' /></td>
+                <td style="background-color:#F2B872; padding-left:25px"><input name = 'title' type = 'text' /></td>
             </tr>
             <tr>
             	<td class="left">內容</td>

@@ -17,8 +17,8 @@
 		$s_l = $_POST[location];
 		$s_sty = $_POST[showstyle];
 		$s_sell = $_POST[sellsystem];
-		if ($s_n == NULL ){
-			header ("Location:newshow.php?type=$type&empty=1") ;
+		if ($s_n == NULL && $s_d == NULL && $s_t == NULL){
+			header ("Location:newshow.php?empty=1") ;
 		}
 
 		else{

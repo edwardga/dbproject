@@ -32,10 +32,10 @@
 <div class="scrolltable">
 	<table>
 		<tr>
-        	<td class="head">表演名稱</td>
-            <td class="head">表演日期</td>
-            <td class="head">表演地點</td>
-            <td class="head">售票系統</td>
+        	<th class="head">表演名稱</td>
+            <th class="head">表演日期</td>
+            <th class="head">表演地點</td>
+            <th class="head">售票系統</td>
         </tr>
         <?php
 			$currday = date("Y-m-d");
@@ -66,10 +66,10 @@
 <div class="scrolltable">
     	<table>
 		<tr>
-        	<td class="head">表演名稱</td>
-            <td class="head">表演日期</td>
-            <td class="head">表演地點</td>
-            <td class="head">售票系統</td>
+        	<th class="head">表演名稱</td>
+            <th class="head">表演日期</td>
+            <th class="head">表演地點</td>
+            <th class="head">售票系統</td>
         </tr>
         <?php
 			$currday = date("Y-m-d");

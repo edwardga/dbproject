@@ -43,11 +43,12 @@
 		$inst_result = mysql_query($inst);
 		while ($inst_result_row = mysql_fetch_row($inst_result)){
 			if($_POST[$inst_result_row[1]]!=NULL){
-				$newIns = "INSERT INTO `show_instrument` (`in_id`, `s_id`) VALUES ('$show_id[0]', '$inst_result_row[0]');";
+				$newIns = "INSERT INTO `show_instrument` (`in_id`, `s_id`) VALUES ('$inst_result_row[0]', '$show_id[0]');";
 				$newIns_i = mysql_query($newIns);
 			}
 		}?>
-		
+		</div>
+        <div class = "indextable">
         <table>
     		<th colspan='2' class="head">已新增表演</th>
         	<tr>

@@ -33,7 +33,7 @@
             <th class="head">售票系統</td>
         </tr>
 		<?php
-			$show = "SELECT show.name, show.day, location.name, sellsystem.name, artist.name  
+			$show = "SELECT show.name, show.day, location.name, sellsystem.name, artist.name, show.id  
 					 FROM `show`, `location`, `sellsystem`, `artist`
 					 WHERE show.l_id=location.id AND show.sell_id=sellsystem.id AND show.ar_id = artist.id
 					 ORDER BY show.day ;" ;
@@ -43,7 +43,7 @@
 			{
 				if($result_row[1]>=$currday){
 					echo "<tr>" ;
-					echo "<td>".$result_row[0]."</td>" ;
+					echo "<td><a href=\"showinfo.php?id=".$result_row[5]."\">".$result_row[0]."</a></td>" ;
 					echo "<td>".$result_row[4]."</td>";
 					echo "<td>".$result_row[1]."</td>" ;
 					echo "<td>".$result_row[2]."</td>" ;

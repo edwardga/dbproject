@@ -58,7 +58,7 @@
 		$style2 = mysql_query($style1) ;
 		$style = mysql_fetch_row($style2) ;
 		echo "<tr>
-				<td>$fetch[1]</td>
+				<td><a href = 'showinfo.php?id=$fetch[0]'>$fetch[1]</a></td>
 				<td>$fetch[2]</td>
 				<td>$fetch[3]</td>
 				<td>$loc[0]</td>

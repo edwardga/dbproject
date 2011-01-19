@@ -32,7 +32,7 @@
             <td><?php
 				$newStyle_r = mysql_query("SELECT `name` FROM `showstyle` WHERE `id` = '$show[5]';");
 				$newStyle_r_row = mysql_fetch_row($newStyle_r);
-				echo $newStyle_r_row[0];
+				echo "<a href='styleinfo.php?id=$show[5]'>".$newStyle_r_row[0]."</a>";
 			?></td>
         </tr>
         <tr>
@@ -40,7 +40,7 @@
             <td><?php 
 				$newlocat_r = mysql_query("SELECT `name` FROM `location` WHERE `id` = '$show[4]';");
 				$newlocat_r_row = mysql_fetch_row($newlocat_r);
-				echo $newlocat_r_row[0];
+				echo "<a href='locinfo.php?id=$show[4]'>".$newlocat_r_row[0]."</a>" ;
 			?></td>
         </tr>
         <tr>
@@ -48,7 +48,7 @@
             <td><?php
             	$newSystem_r = mysql_query("SELECT `name` FROM `sellsystem` WHERE `id` = '$show[6]';");
 				$newSystem_r_row = mysql_fetch_row($newSystem_r);
-				echo $newSystem_r_row[0];
+				echo "<a href='sellinfo.php?id=$show[4]'>".$newSystem_r_row[0]."</a>" ;
             ?></td>
         </tr>
         <tr>
@@ -56,7 +56,7 @@
             <td><?php
             	$newArt_r = mysql_query("SELECT `name` FROM `artist` WHERE `id` = '$show[7]';");
 				$newArt_r_row = mysql_fetch_row($newArt_r);
-				echo $newArt_r_row[0];
+				echo "<a href='artinfo.php?id=$show[7]'>".$newArt_r_row[0]."</a>" ;				
             ?></td>
         </tr>
         <tr>
@@ -68,7 +68,7 @@
 				$inst = "SELECT name FROM `instrument` WHERE id = '$newInst_r_row[0]';" ;
 				$inst2 = mysql_query($inst) ;
 				$inst_r = mysql_fetch_row($inst2) ;
-				echo $inst_r[0]. ' ' ;
+				echo "<a href='instinfo.php?id=$newInst_r_row[0]'>".$inst_r[0]."</a>". " " ;
 			  }
             ?></td>
         </tr>

@@ -37,6 +37,8 @@
     <th class='head'>歌曲風格</td>
     <th class='head'>分數</td>
     <th class='head'>表演者</td>
+    <th class='head'></td>
+    <th class='head'></td>    
 </tr>
 <?php
 	$display = "SELECT * FROM `myfavsong` WHERE account_id ='$_SESSION[account]'" ;
@@ -70,7 +72,9 @@
 			echo "★★★★☆" ;
 		elseif ($result[3]==5)
 			echo "★★★★★" ;
-		echo	"</td><td>$art[0]</td></tr>" ;
+		echo	"</td><td>$art[0]</td>" ;
+		echo "<td><a href='modifys.php?id=$song[0]'>修改分數</a></td>" ;
+		echo "<td><a href='deletes.php?id=$song[0]'>刪除</a></td></tr>" ;
 		}
 	if ($temp == 0)
 		echo "<td colspan='8' style='text-align:center'>您沒有將歌曲加入我的最愛中" ;

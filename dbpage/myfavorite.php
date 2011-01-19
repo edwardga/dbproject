@@ -1,8 +1,14 @@
 <?php
 	include_once('include/auth.php') ;
-	$auth = auth() ;
-	if ($auth == NULL)
-		echo "您沒有使用此頁面的權力" ;
+	if(auth()=="artist")
+		require_once "include/header_logged_artist.php";
+	elseif(auth()=="audience")
+		require_once "include/header_logged_aud.php";
+	else
+	{
+		require_once "include/header_index.php";
+		echo "<h1>您沒有使用此頁面的權力</h1>" ;
+	}
     $db_host = 'localhost' ;
 	$db_database = 'DBproject' ;
 	$db_username = 'root' ;
@@ -20,9 +26,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <body>
-我的最愛
+</div>
+<div class = 'indextable'>
 <table border = 1>
-<tr><td>表演名稱</td><td>日期</td><td>時間</td><td>地點</td><td>表演風格</td><td>售票系統</td><td>分數</td><</tr>
+<tr><td>表演名稱</td><td>日期</td><td>時間</td><td>地點</td><td>表演風格</td><td>售票系統</td><td>分數</td><td>表演者</td></tr>
 <?php
 	$display = "SELECT * FROM `myfavorite` WHERE account_id ='$_SESSION[account]'" ;
 	$display2 = mysql_query($display) ;
@@ -40,9 +47,13 @@
 		$sell1 = "SELECT name FROM sellsystem WHERE id = $show[6]" ;
 		$sell2 = mysql_query($sell1) ;
 		$sell = mysql_fetch_row($sell2) ;
-		echo "<tr><td>$show[1]</td><td>$show[2]</td><td>$show[3]</td><td>$loc[0]</td><td>$style[0]</td><td>$sell[0]</td><td>$result[3]</td></tr>" ;
+		$art1 = "SELECT name FROM artist WHERE id = $show[7]" ;
+		$art2 = mysql_query($art1) ;
+		$art = mysql_fetch_row($art2) ;
+		echo "<tr><td>$show[1]</td><td>$show[2]</td><td>$show[3]</td><td>$loc[0]</td><td>$style[0]</td><td>$sell[0]</td><td>$result[3]</td><td>$art[0]</td></tr>" ;
 	}
 ?>
 </table>
+</div>
 </body>
 </html>

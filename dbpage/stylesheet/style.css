@@ -48,6 +48,7 @@ html, body{background: #783143;}
 	top: 102px; left: 946px;
 	font-family:"微軟正黑體", "新細明體", "標楷體";
 	font-weight: bold;
+	border-radius:0 10px 0 0;
 }
 #logstat a{
 	float: left; display: block; list-style: none;
@@ -56,6 +57,7 @@ html, body{background: #783143;}
 	font-size:16px; color: #fff;
 	text-decoration: none;
 	font-weight: bold;
+	
 }
 #logstat li{
 	margin-color: #FFF;
@@ -65,13 +67,16 @@ html, body{background: #783143;}
 	font-size:16px; color: #fff;
 	border-left: 1px solid #593B3B; 
 	border-right: 1px solid #593B3B;
+	border-radius:10px 10px 0 0;
 }
 #logstat h1{
-	background-color:: #783143;
-	float:left; padding:6px 6px 0 0;
+	color:#000000;
+	background-color:#F2B872;
+	float:left; padding:7px 10px 7px 10px; 
 	font-family:"微軟正黑體", "新細明體", "標楷體";
 	font-size:16px;
 	font-weight:bold;
+	border-radius:10px 0 0 0;
 }
 #logstat li, #logstat li:link, #logstat li:visited, #logstat li:active  {background: #593B3B;}
 #logstat li:hover    {background: #261F20; border-left: 1px solid #FCDAFC; border-right: 1px solid #FCDAFC;}
@@ -118,13 +123,13 @@ img.note{position:absolute; top:35px;}
 }
 .indextable{
 	margin: 5px auto 0 auto;
-	max-width:900px;
+	max-width:1000px;
 	padding-bottom:5px;
 }
 .indextable table{
 	background-color: #783143;
 	margin: 20px auto 0 auto;
-	max-width: 800px;
+	max-width: 1000px;
 }
 .indextable td{
 	background-color: #293633;
@@ -204,6 +209,7 @@ img.note{position:absolute; top:35px;}
 	border-radius: 10px 10px 0 0;
 	font-size:16px; padding: 5px 20px 5px 20px;
 	font-family:"微軟正黑體", "新細明體", "標楷體";
+	font-weight:bold;
 }
 .foot{
 	background-color:#F2B872; 

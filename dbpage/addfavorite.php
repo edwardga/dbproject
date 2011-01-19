@@ -20,14 +20,14 @@
 	echo "</div><div class='indextable'>" ;
 	echo "<table>" ;
 	echo "<tr>
-			<td class = 'head'>表演名稱</td>
-			<td class = 'head'>日期</td>
-			<td class = 'head'>時間</td>
-			<td class = 'head'>地點</td>
-			<td class = 'head'>售票系統</td>
-			<td class = 'head'>表演風格</td>
-			<td class = 'head'>表演者</td>
-			<td class = 'head'>分數</td>
+			<th class = 'head'>表演名稱</td>
+			<th class = 'head'>日期</td>
+			<th class = 'head'>時間</td>
+			<th class = 'head'>地點</td>
+			<th class = 'head'>售票系統</td>
+			<th class = 'head'>表演風格</td>
+			<th class = 'head'>表演者</td>
+			<th class = 'head'>分數</td>
 		 </tr>" ;
 	echo "<form method = 'post' action='addfavorite2.php'>" ;
 	for ($i = 0 ; $id[$i] != NULL ; $i++)
@@ -55,10 +55,10 @@
 		echo "<tr><td>$display[1]</td><td>$display[2]</td><td>$display[3]</td><td>$loc[0]</td><td>$sell[0]</td><td>$style[0]</td><td>$art[0]</td>";
 		echo "<td><select name='grade[$i]'>
 				<option value =5>★★★★★
-				<option value =4>☆★★★★
-				<option value =3>☆☆★★★
-				<option value =2>☆☆☆★★
-				<option value =1>☆☆☆☆★				
+				<option value =4>★★★★☆
+				<option value =3>★★★☆☆
+				<option value =2>★★☆☆☆
+				<option value =1>★☆☆☆☆			
 				</select></td></tr>" ;
 		echo "<input name = 'id[$i]' type = 'hidden' value = '$id[$i]'>" ;
 	}

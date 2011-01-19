@@ -33,7 +33,6 @@
 	<table>
 		<tr>
         	<td class="head">表演名稱</td>
-            <td class="head">表演者</td>
             <td class="head">表演日期</td>
             <td class="head">表演地點</td>
             <td class="head">售票系統</td>
@@ -51,7 +50,6 @@
 			if($result_row[1]>=$currday){
 					echo "<tr>" ;
 					echo "<td>".$result_row[0]."</td>" ;
-					echo "<td>".$result_row[4]."</td>";
 					echo "<td>".$result_row[1]."</td>" ;
 					echo "<td>".$result_row[2]."</td>" ;
 					echo "<td>".$result_row[3]."</td>" ;
@@ -69,7 +67,6 @@
     	<table>
 		<tr>
         	<td class="head">表演名稱</td>
-            <td class="head">表演者</td>
             <td class="head">表演日期</td>
             <td class="head">表演地點</td>
             <td class="head">售票系統</td>
@@ -87,7 +84,6 @@
 			if($result_row[1]<$currday){
 					echo "<tr>" ;
 					echo "<td>".$result_row[0]."</td>" ;
-					echo "<td>".$result_row[4]."</td>";
 					echo "<td>".$result_row[1]."</td>" ;
 					echo "<td>".$result_row[2]."</td>" ;
 					echo "<td>".$result_row[3]."</td>" ;

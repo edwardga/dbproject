@@ -25,7 +25,7 @@
 		$check = mysql_fetch_row($check2) ;
 		if ($check[0] == NULL )
 		{
-			$add1 = "INSERT INTO myfavorite(id, account_id, s_id, score) VALUES (NULL,'edwardga','$id[$i]','$grade[$i]') ;" ;
+			$add1 = "INSERT INTO myfavorite(id, account_id, s_id, score) VALUES (NULL,'$_SESSION[account]','$id[$i]','$grade[$i]') ;" ;
 			$add2 = mysql_query($add1) ;
 		}
 	}

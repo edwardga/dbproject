@@ -116,16 +116,17 @@ img.note{position:absolute; top:35px;}
 	font-family:"微軟正黑體", "新細明體", "標楷體";
 	max-width:150px;
 	word-break:break-all;
+	text-align:center;
 }
 .indextable{
 	margin: 5px auto 0 auto;
-	max-width:950px;
+	max-width:900px;
 	padding-bottom:5px;
 }
 .indextable table{
 	background-color: #783143;
 	margin: 20px auto 0 auto;
-	width: 900px;
+	max-width: 800px;
 }
 .indextable td{
 	background-color: #293633;
@@ -135,7 +136,6 @@ img.note{position:absolute; top:35px;}
 	color: #FFFFFF;
 	font-size: 16px;
 	font-family:"微軟正黑體", "新細明體", "標楷體";
-	max-width:150px;
 	word-break:break-all; 
 }
 
@@ -229,6 +229,7 @@ img.note{position:absolute; top:35px;}
 .regulartable td{
 	margin:0; padding: 5px; 
 	border-collapse:collapse;
+	text-align:center;
 }
 .regulartable h1{color: #F00; text-align:center;}
 .left{background-color: #F2B872; color: #293633; text-align:center;}

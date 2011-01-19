@@ -33,13 +33,13 @@
 	echo "</div><div class='indextable'>" ;
 	echo "<table>" ;
 	echo "<tr>
-			<td class = 'head'>表演名稱</td>
-			<td class = 'head'>日期</td>
-			<td class = 'head'>時間</td>
-			<td class = 'head'>地點</td>
-			<td class = 'head'>售票系統</td>
-			<td class = 'head'>表演風格</td>
-			<td class = 'head'>選取</td>
+			<th class = 'head'>表演名稱</td>
+			<th class = 'head'>日期</td>
+			<th class = 'head'>時間</td>
+			<th class = 'head'>地點</td>
+			<th class = 'head'>售票系統</td>
+			<th class = 'head'>表演風格</td>
+			<th class = 'head'>選取</td>
 		 </tr>" ;
 	$result = 0 ;
 	echo "<form method = 'post' action = 'addfavorite.php'>" ;

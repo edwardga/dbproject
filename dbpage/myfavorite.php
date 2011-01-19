@@ -28,8 +28,17 @@
 <body>
 </div>
 <div class = 'indextable'>
-<table border = 1>
-<tr><td>表演名稱</td><td>日期</td><td>時間</td><td>地點</td><td>表演風格</td><td>售票系統</td><td>分數</td><td>表演者</td></tr>
+<table>
+<tr>
+	<th class='head'>表演名稱</td>
+    <th class='head'>日期</td>
+    <th class='head'>時間</td>
+    <th class='head'>地點</td>
+    <th class='head'>表演風格</td>
+    <th class='head'>售票系統</td>
+    <th class='head'>分數</td>
+    <th class='head'>表演者</td>
+</tr>
 <?php
 	$display = "SELECT * FROM `myfavorite` WHERE account_id ='$_SESSION[account]'" ;
 	$display2 = mysql_query($display) ;

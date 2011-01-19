@@ -93,12 +93,20 @@ img.note{position:absolute; top:35px;}
 	width: 240px; color: #FFF;
 	text-align: left; padding-left: 10px;
 	margin:0 0 0 100px;
+	position:static;
 }
-.apDiv4 table{
+.scrolltable{
+	margin: 5px auto 0 auto;
+	max-height:200px; overflow:scroll;
+	max-width:950px;
+	padding-bottom:5px;
+}
+.scrolltable table{
 	background-color: #783143;
 	margin: 20px auto 0 auto;
+	width: 900px;
 }
-.apDiv4 td{
+.scrolltable td{
 	background-color: #293633;
 	border-top: 0px solid #783143;
 	border-bottom: 0px solid #783143;
@@ -106,6 +114,29 @@ img.note{position:absolute; top:35px;}
 	color: #FFFFFF;
 	font-size: 16px;
 	font-family:"微軟正黑體", "新細明體", "標楷體";
+	max-width:150px;
+	word-break:break-all;
+}
+.indextable{
+	margin: 5px auto 0 auto;
+	max-width:950px;
+	padding-bottom:5px;
+}
+.indextable table{
+	background-color: #783143;
+	margin: 20px auto 0 auto;
+	width: 900px;
+}
+.indextable td{
+	background-color: #293633;
+	border-top: 0px solid #783143;
+	border-bottom: 0px solid #783143;
+	padding: 5px 20px 5px 20px;
+	color: #FFFFFF;
+	font-size: 16px;
+	font-family:"微軟正黑體", "新細明體", "標楷體";
+	max-width:150px;
+	word-break:break-all; 
 }
 
 

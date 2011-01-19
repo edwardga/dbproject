@@ -28,7 +28,8 @@
 	else 
 		$date2 = "'".$date2."'" ;
 	$style = $_GET['style'] ;
-	$search = "SELECT * FROM `show` , `showstyle`  WHERE `show`.style_id = `showstyle`.id AND show.name LIKE '%$name%' AND day > $date1 AND day < $date2 AND showstyle.name LIKE '%$style%' ;" ;
+	$artist = $_GET['artist'] ;
+	$search = "SELECT * FROM `show` , `showstyle`, `artist`  WHERE `show`.style_id = `showstyle`.id AND show.name LIKE '%$name%' AND day > $date1 AND day < $date2 AND showstyle.name LIKE '%$style%' AND artist.id = show.ar_id AND artist.name LIKE '%$artist%' ;" ;
 	$query = mysql_query($search) ; 
 	echo "</div><div class='indextable'>" ;
 	echo "<table>" ;
@@ -39,6 +40,7 @@
 			<th class = 'head'>地點</td>
 			<th class = 'head'>售票系統</td>
 			<th class = 'head'>表演風格</td>
+			<th class = 'head'>表演者</td>
 			<th class = 'head'>選取</td>
 		 </tr>" ;
 	$result = 0 ;
@@ -55,14 +57,21 @@
 		$style1 = "SELECT name FROM showstyle WHERE id = $fetch[5]" ;
 		$style2 = mysql_query($style1) ;
 		$style = mysql_fetch_row($style2) ;
-		echo "<tr><td>$fetch[1]</td><td>$fetch[2]</td><td>$fetch[3]</td><td>$loc[0]</td><td>$sell[0]</td><td>$style[0]</td>" ;
+		echo "<tr>
+				<td>$fetch[1]</td>
+				<td>$fetch[2]</td>
+				<td>$fetch[3]</td>
+				<td>$loc[0]</td>
+				<td>$sell[0]</td>
+				<td>$style[0]</td>
+				<td>$fetch[12]</td> ";
 		echo "<td style='text-align:center'><input type=checkbox name='id[]' value= '$fetch[0]'></td></tr>" ;		
 	}
 
 	if($result == 0)
-		echo "<tr><td colspan='7' style='text-align:center'>無法找到與目標相符的表演</td></tr>" ;
+		echo "<tr><td colspan='8' style='text-align:center'>無法找到與目標相符的表演</td></tr>" ;
 	else
-		echo "<tr><td colspan='5' style='text-align:center'>找到以上表演</td><td colspan='2' style='text-align:center'><input type='submit' name = 'submit' value = '加入我的最愛'></td></tr>" ;	
+		echo "<tr><td colspan='6' style='text-align:center'>找到以上表演</td><td colspan='2' style='text-align:center'><input type='submit' name = 'submit' value = '加入我的最愛'></td></tr>" ;	
 	echo "</form>" ;
 	echo "</table>" ;
 ?>

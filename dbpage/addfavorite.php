@@ -29,6 +29,7 @@
 			<th class = 'head'>表演者</td>
 			<th class = 'head'>分數</td>
 		 </tr>" ;
+	if ($id != NULL) {
 	echo "<form method = 'post' action='addfavorite2.php'>" ;
 	for ($i = 0 ; $id[$i] != NULL ; $i++)
 	{
@@ -62,7 +63,8 @@
 				</select></td></tr>" ;
 		echo "<input name = 'id[$i]' type = 'hidden' value = '$id[$i]'>" ;
 	}
-	echo "<tr><td colspan = '7'></td><td  style='text-align:center'><input name='submit' type = 'submit' value = '送出'></td></tr>" ;
-	
+	echo "<tr><td colspan = '7'></td><td  style='text-align:center'><input name='submit' type = 'submit' value = '送出'></td></tr>" ;}
+	else
+		echo "<tr><td style = 'text-align:center' colspan = '8' >您並未選擇任何歌曲</td>" ;
 	echo "</form></table>" ;
 ?>

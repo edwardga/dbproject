@@ -22,29 +22,30 @@
 		$date2 = "'".$date2."'" ;
 	$style = $_GET['style'] ;
 	$search = "SELECT * FROM `show` , `showstyle`  WHERE `show`.style_id = `showstyle`.id AND show.name LIKE '%$name%' AND day > $date1 AND day < $date2 AND showstyle.name LIKE '%$style%' ;" ;
-	echo $search ;
 	$query = mysql_query($search) ; 
 	echo "<table border = 1>" ;
-	echo "<tr><td>表演名稱</td><td>日期</td><td>時間</td><td>地點</td><td>表演風格</td><td>售票系統</td></tr>" ;
-	do 
+	echo "<tr><td>表演名稱</td><td>日期</td><td>時間</td><td>地點</td><td>表演風格</td><td>售票系統</td><td>選取</td></tr>" ;
+	$result = 0 ;
+	echo "<form method = 'post' action = 'addfavorite.php'>" ;
+	while ($fetch = mysql_fetch_row($query)) 
 	{
-		if($fetch[0]== NULL)
-			echo "<tr><td colspan='6' align = 'center'>無法找到與目標相符的表演</td></tr>" ;
-		else
-		{
-
-			$loc1 = "SELECT name FROM location WHERE id = $fetch[4]" ;
-			$loc2 = mysql_query($loc1) ;
-			$loc = mysql_fetch_row($loc2) ;
-			$sell1 = "SELECT name FROM sellsystem WHERE id = $fetch[6]" ;
-			$sell2 = mysql_query($sell1) ;
-			$sell = mysql_fetch_row($sell2) ;
-			$style1 = "SELECT name FROM showstyle WHERE id = $fetch[5]" ;
-			$style2 = mysql_query($style1) ;
-			$style = mysql_fetch_row($style2) ;
-			echo "<tr><td>$fetch[1]</td><td>$fetch[2]</td><td>$fetch[3]</td><td>$loc[0]</td><td>$sell[0]</td><td>$style[0]</td></tr>" ;		
-		}
-
-	}while ($fetch = mysql_fetch_row($query)) ;
-		echo "</table>" ;
+		$result = 1 ;
+		$loc1 = "SELECT name FROM location WHERE id = $fetch[4]" ;
+		$loc2 = mysql_query($loc1) ;
+		$loc = mysql_fetch_row($loc2) ;
+		$sell1 = "SELECT name FROM sellsystem WHERE id = $fetch[6]" ;
+		$sell2 = mysql_query($sell1) ;
+		$sell = mysql_fetch_row($sell2) ;
+		$style1 = "SELECT name FROM showstyle WHERE id = $fetch[5]" ;
+		$style2 = mysql_query($style1) ;
+		$style = mysql_fetch_row($style2) ;
+		echo "<tr><td>$fetch[1]</td><td>$fetch[2]</td><td>$fetch[3]</td><td>$loc[0]</td><td>$sell[0]</td><td>$style[0]</td>" ;
+		echo "<td><input type=checkbox name='id[]' value= '$fetch[0]'></td></tr>" ;		
+	}
+	if($result == 0)
+		echo "<tr><td colspan='7' align = 'center'>無法找到與目標相符的表演</td></tr>" ;
+	else
+		echo "<tr><td colspan='6' align = 'center'>找到以上表演</td><td><input type='submit' name = 'submit' value = '加入我的最愛'></td></tr>" ;
+	echo "</form>" ;
+	echo "</table>" ;
 ?>

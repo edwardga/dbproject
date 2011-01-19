@@ -17,62 +17,31 @@
 	  <div id="showcomment">
   		<h1>觀眾評論</h1>
         <div id="showcomment2">
-        <table>
+<?php
+		$find1 = "SELECT * FROM comment WHERE s_id = '$show[0]'";
+		$find2 = mysql_query($find2) ;
+		while ($fetch = mysql_fetch_row($find2))
+		{
+		$type = auth() ;
+		$name1 = "SELECT name FROM account, '$type' WHERE account.account_id = $_SESSION AND account.type = '' AND account.type_id=$type.id" ;
+		echo $name1 ;
+		echo"<table>
             <tr>
-            	<td width="30%">標題</td>
-            	<td>好好吃</td>
+            	<td width='30%'>標題</td>
+            	<td>$fetch[4]</td>
             </tr>
             <tr>
-            	<td width="30%">暱稱</td>
-            	<td>大尾巴</td>
+            	<td width='30%'>稱呼</td>
+            	<td></td>
             </tr>
             <tr>
-            	<td width="30%">內容</td>
+            	<td width='30%'>內容</td>
             	<td>我真的覺得多利多姿好好吃喔！！！天阿～～～真的超好吃的拉～～我一下就吃完兩包了。</td>
             </tr>
         </table>
-               <table>
-            <tr>
-            	<td width="30%">標題</td>
-            	<td>好好吃</td>
-            </tr>
-            <tr>
-            	<td width="30%">暱稱</td>
-            	<td>大尾巴</td>
-            </tr>
-            <tr>
-            	<td width="30%">內容</td>
-            	<td>我真的覺得多利多姿好好吃喔！！！天阿～～～真的超好吃的拉～～我一下就吃完兩包了。</td>
-            </tr>
-        </table>
-               <table>
-            <tr>
-            	<td width="30%">標題</td>
-            	<td>好好吃</td>
-            </tr>
-            <tr>
-            	<td width="30%">暱稱</td>
-            	<td>大尾巴</td>
-            </tr>
-            <tr>
-            	<td width="30%">內容</td>
-            	<td>我真的覺得多利多姿好好吃喔！！！天阿～～～真的超好吃的拉～～我一下就吃完兩包了。</td>
-            </tr>
-        </table>
-               <table>
-            <tr>
-            	<td width="30%">標題</td>
-            	<td>好好吃</td>
-            </tr>
-            <tr>
-            	<td width="30%">暱稱</td>
-            	<td>大尾巴</td>
-            </tr>
-            <tr>
-            	<td width="30%">內容</td>
-            	<td>我真的覺得多利多姿好好吃喔！！！天阿～～～真的超好吃的拉～～我一下就吃完兩包了。</td>
-            </tr>
-        </table>
+		}" ;
+		}
+?>
        </div>
   </div>
 	<div class="showinfo2">
@@ -125,21 +94,19 @@
   </div>
   <div id="comment">
   		<table>
+        <form method="post" action="write.php"> ;
         	<th colspan="2" class="head">評論</th>
             <tr>
             	<td class="left">標題</td>
-                <td class="right">好好吃</td>
-            </tr>
-            <tr>
-            	<td class="left">暱稱</td>
-            	<td class="right">大尾巴</td>
+                <td class="right"><input name = 'title' type = 'text' /></td>
             </tr>
             <tr>
             	<td class="left">內容</td>
-            	<td  class="right"><textarea cols="40" rows="5" style="resize:none"></textarea></td>
+            	<td  class="right"><textarea name = 'content' cols="40" rows="5" style="resize:none"></textarea></td>
             </tr>
-            <th colspan="2" class="foot">送出</th>
-        </table>
+            <th colspan="2" class="foot"><input type = 'submit' name = 'submit' value = '送出' /></th>
+        </form>
+        </table>        
   </div>
 
 <?php require_once "include/foot.php"; ?>

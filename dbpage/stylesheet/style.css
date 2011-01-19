@@ -82,11 +82,11 @@ html, body{background: #783143;}
 #logstat a:hover 													{color: #FFF;}
 img.note{position:absolute; top:35px;}
 
-#apDiv4{
+.apDiv4{
 	width: 1010px;
 	margin: 50px auto 0 auto;
 }
-#apDiv4 h1{
+.apDiv4 h1{
 	font-size: 30px;
 	font-family: "微軟正黑體", "新細明體", "標楷體";
 	font-weight: bold;
@@ -94,11 +94,11 @@ img.note{position:absolute; top:35px;}
 	text-align: left; padding-left: 10px;
 	margin:0 0 0 100px;
 }
-#apDiv4 table{
+.apDiv4 table{
 	background-color: #783143;
 	margin: 20px auto 0 auto;
 }
-#apDiv4 td{
+.apDiv4 td{
 	background-color: #293633;
 	border-top: 0px solid #783143;
 	border-bottom: 0px solid #783143;

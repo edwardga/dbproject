@@ -4,6 +4,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>玩樂生活</title>
+    <link rel="icon" type="image/ico"  href="images/green2.ico">
 	<link rel="stylesheet" href="stylesheet/reset.css" type="text/css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="stylesheet/style.css" type="text/css" media="screen" charset="utf-8">
 	

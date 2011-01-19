@@ -3,27 +3,26 @@ html, body{background: #783143;}
 	margin: auto; padding-top: 20px;
 	width: 1010px; height: 70px;
 }
-#header {
+#header{
 	background-color:#783143;
 	color: #FFF;  float: left;
 	padding: 20px 10px 30px 30px;
 	font-family:"微軟正黑體", "新細明體", "標楷體";
 	width: 320px;
-/*	margin: 0 auto 0 0;*/
 	font-size:50px;
 }
 #header p{
 	padding:0 0 0 75px;
 	font-weight: bold;
 }
-.nav {
+.nav{
 	width: 1010px;
 	height: 44px;
 	margin: 43px auto 0 auto;
 	font-family:"微軟正黑體", "新細明體", "標楷體";
 	background-color: #593B3B;
 }
-.nav ul{	border-collapse:collapse;}
+.nav ul{border-collapse:collapse;}
 .nav li{
 	margin-color: #FFF;
 	float: right; display: block; list-style: none;
@@ -31,7 +30,6 @@ html, body{background: #783143;}
 	padding: 9px 6px 9px 6px;
 	font-size:16px; color: #fff;
 	border: 1px solid #593B3B; 
-/*	border-right: 1px solid #593B3B; */
 }
 .nav a{
 	float: right; display: block; list-style:none;
@@ -41,12 +39,11 @@ html, body{background: #783143;}
 	font-weight: bold;
 }
 .nav li, .nav li:link, .nav li:visited, .nav li:active  {background: #593B3B;}
-.nav li:hover           {background: #261F20; border-left: 1px solid #FCDAFC; border-right: 1px solid #FCDAFC; }
+.nav li:hover           								{background: #261F20; border-left: 1px solid #FCDAFC; border-right: 1px solid #FCDAFC; }
 .nav a, .nav a:link, .nav li:visited, .nav li:active	{color: #FFF;}
-.nav a:hover 													{color: #FFF;}
-#logstat {
+.nav a:hover 											{color: #FFF;}
+#logstat{
 	float:right;
-	/*background-color: #593B3B;*/
 	margin-top: 77px;
 	top: 102px; left: 946px;
 	font-family:"微軟正黑體", "新細明體", "標楷體";
@@ -59,9 +56,8 @@ html, body{background: #783143;}
 	font-size:16px; color: #fff;
 	text-decoration: none;
 	font-weight: bold;
-
 }
-#logstat li {
+#logstat li{
 	margin-color: #FFF;
 	float: left; display: block; list-style: none;
 	width: 70px; height: 24px; text-align:center;
@@ -75,11 +71,13 @@ html, body{background: #783143;}
 	float:left; padding:6px 6px 0 0;
 	font-family:"微軟正黑體", "新細明體", "標楷體";
 	font-size:16px;
-	font-weight:bold;}
+	font-weight:bold;
+}
 #logstat li, #logstat li:link, #logstat li:visited, #logstat li:active  {background: #593B3B;}
-#logstat li:hover           {background: #261F20; border-left: 1px solid #FCDAFC; border-right: 1px solid #FCDAFC;}
+#logstat li:hover    {background: #261F20; border-left: 1px solid #FCDAFC; border-right: 1px solid #FCDAFC;}
 #logstat a, #logstat a:link, #logstat li:visited, #logstat li:active	{color: #FFF;}
-#logstat a:hover 													{color: #FFF;}
+#logstat a:hover 														{color: #FFF;}
+
 img.note{position:absolute; top:35px;}
 
 .apDiv4{
@@ -90,7 +88,7 @@ img.note{position:absolute; top:35px;}
 	font-size: 30px;
 	font-family: "微軟正黑體", "新細明體", "標楷體";
 	font-weight: bold;
-	width: 240px; color: #FFF;
+    color: #FFF;
 	text-align: left; padding-left: 10px;
 	margin:0 0 0 100px;
 	position:static;
@@ -138,16 +136,16 @@ img.note{position:absolute; top:35px;}
 	font-family:"微軟正黑體", "新細明體", "標楷體";
 	word-break:break-all; 
 }
+.indextable h2{color:#F00;}
 
-
-#nav2 {
+#nav2{
 	width: 1010px;
 	height: 40px;
 	margin: 43px auto 0 auto;
 	font-family:"微軟正黑體", "新細明體", "標楷體";
 	background-color: #593B3B;
 }
-#nav2 ul{	border-collapse:collapse;}
+#nav2 ul{border-collapse:collapse;}
 #nav2 li{
 	margin-color: #FFF;
 	float: right; display: block; list-style: none;
@@ -157,9 +155,9 @@ img.note{position:absolute; top:35px;}
 	border: 1px solid #593B3B; 
 }
 #nav2 a{
-	float: left; display: block; list-style:none;
-	width: 70px; 
-	font-size:16px; color: #fff;
+	float:left; display:block; list-style:none;
+	width:70px; 
+	font-size:16px; color:#fff;
 	text-decoration: none;
 	font-weight: bold;
 }
@@ -168,41 +166,42 @@ img.note{position:absolute; top:35px;}
 #nav2 a, #apDiv2 a:link, #nav2 li:visited, #nav2 li:active	{color: #FFF;}
 #nav2 a:hover 													{color: #FFF;}
 
-img.note{position:absolute; top:35px;}
-
 #pack2{
 	margin:auto; padding-top: 50px;
 	width: 1010px; height: 70px;
 }
 #music{
 	background-color:#261F20;
-	color: #FFF;  float: left;
+	color:#FFF;  float:left;
 	font-family:"微軟正黑體", "新細明體", "標楷體";
-	width: 600px; height: 170px;
+	width:600px; height:170px;
 	font-size:20px; font-weight:bold;
 	text-align:center;
 	padding-top: 140px;
 }
+
 .login{
-	float: right;
+	float:right;
 	background-color: #261F20;
 	width: 400px; height:310px;
 }
 .login table{
-	margin:80px 0 0 85px;
-	/*background-color:#261F20;*/
-	color: #FFFFFF;
-	font-size:16px;
-	font-weight:bold;
+	margin:80px 0 0 85px; color: #FFFFFF;
+	font-size:16px; font-weight:bold;
 	font-family: "微軟正黑體", "新細明體", "標楷體";
 	}
 .login h1{text-align:center; color:#F00;}
+.login a{text-decoration:none;}
+.login a, .login a:link, .login li:visited, .login li:active	{color: #F00;}
+.login a:hover 													{color: #293633;}
+
 .head{
 	background-color:#F2B872; 
 	color:#293633; margin:0 10px 0 10px; 
 	text-align:center; padding:5px;
 	border-radius: 10px 10px 0 0;
-	font-size:16px;
+	font-size:16px; padding: 5px 20px 5px 20px;
+	font-family:"微軟正黑體", "新細明體", "標楷體";
 }
 .foot{
 	background-color:#F2B872; 
@@ -210,20 +209,16 @@ img.note{position:absolute; top:35px;}
 	text-align:center; padding:5px;
 	border-radius: 0 0 10px 10px;
 	font-size:16px;
+	font-family:"微軟正黑體", "新細明體", "標楷體";
 }
-.login a{text-decoration:none;}
-.login a, .login a:link, .login li:visited, .login li:active	{color: #F00;}
-.login a:hover 													{color: #293633;}
 
 .regulartable {
 	margin:20px auto 20px auto;
-	background-color: #261F20; width:1010px;}
-	
+	background-color: #261F20; width:1010px;
+}
 .regulartable table{
 	margin:auto; padding-top:50px; padding-bottom:50px;
-	color: #293633;
-	font-size:16px;
-	font-weight:bold;
+	color: #293633; font-size:16px; font-weight:bold;
 	font-family: "微軟正黑體", "新細明體", "標楷體";
 }
 .regulartable td{
@@ -232,14 +227,16 @@ img.note{position:absolute; top:35px;}
 	text-align:center;
 }
 .regulartable h1{color: #F00; text-align:center;}
+
 .left{background-color: #F2B872; color: #293633; text-align:center;}
 .right{background-color: #F2B872; color: #293633; text-align:center;}
+
 #footer{
 	background-color: #593B3B;
 	font-famaily:"微軟正黑體", "新細明體", "標楷體";
 	font-size:12px; color: #FFFFFF;
 	width: 1010px; height: 20px;
-	margin: 20px auto 0 auto;
+	margin: 40px auto 0 auto;
 	padding: 5px 0 0 0;
 	text-align:center;
 }

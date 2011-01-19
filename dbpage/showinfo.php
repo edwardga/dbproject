@@ -14,7 +14,39 @@
 		$show = mysql_fetch_row($show2) ;
 ?>
 </div>
-        <div class = "indextable">
+<div class = "showinfo">
+	  <div id="showcomment">
+  		<h1>觀眾評論</h1>
+        <div id="showcomment2">
+<?php
+		$find1 = "SELECT * FROM comment WHERE s_id = '$show[0]' ORDER BY id DESC";
+		$find2 = mysql_query($find1) ;
+		while ($fetch = mysql_fetch_row($find2))
+		{
+		$type = auth() ;
+		$name1 = "SELECT name FROM account, `$type` WHERE account.account_id = '$_SESSION[account]' AND account.type = '$type' AND account.type_id=$type.id" ;
+		$name2 = mysql_query($name1) ;
+		$name = mysql_fetch_row($name2) ;
+		echo"<table>
+            <tr>
+            	<td width='30%'>標題</td>
+            	<td>$fetch[4]</td>
+            </tr>
+            <tr>
+            	<td width='30%'>稱呼</td>
+            	<td>$name[0]</td>
+            </tr>
+            <tr>
+            	<td width='30%'>內容</td>
+            	<td>$fetch[3]</td>
+            </tr>
+        </table>
+		" ;
+		}
+?>
+       </div>
+  </div>
+        <div class = "showinfo2">
         <table>
     		<tr>
             <th colspan="2" class="head"><?php echo $show[1]; ?></th>
@@ -74,4 +106,22 @@
         </tr>
         </tr>
         </table>
+</div>
+  <div id="comment">
+  		<table>
+        <form method="post" action="<?php echo "write.php?id=$id" ?>"> ;
+        	<th colspan="2" class="head">評論</th>
+            <tr>
+            	<td class="left">標題</td>
+                <td class="right"><input name = 'title' type = 'text' /></td>
+            </tr>
+            <tr>
+            	<td class="left">內容</td>
+            	<td  class="right"><textarea name = 'content' cols="40" rows="5" style="resize:none"></textarea></td>
+            </tr>
+            <th colspan="2" class="foot"><input type = 'submit' name = 'submit' value = '送出' /></th>
+        </form>
+        </table>        
+  </div>
+
 <?php require_once "include/foot.php"; ?>

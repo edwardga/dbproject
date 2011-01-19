@@ -36,6 +36,7 @@
             <th class="head">表演日期</td>
             <th class="head">表演地點</td>
             <th class="head">售票系統</td>
+            <th class="head"></td>            
         </tr>
         <?php
 			$currday = date("Y-m-d");
@@ -52,7 +53,7 @@
 					echo "<td>".$result_row[1]."</td>" ;
 					echo "<td>".$result_row[2]."</td>" ;
 					echo "<td>".$result_row[3]."</td>" ;
-					echo "</tr>";
+					echo "<td><a href='delshow.php?id=$result_row[4]'>刪除</a></td></tr>" ;
 			}
 		}
 		?>
@@ -69,6 +70,7 @@
             <th class="head">表演日期</td>
             <th class="head">表演地點</td>
             <th class="head">售票系統</td>
+            <th class="head"></td>
         </tr>
         <?php
 			$currday = date("Y-m-d");
@@ -86,7 +88,7 @@
 					echo "<td>".$result_row[1]."</td>" ;
 					echo "<td>".$result_row[2]."</td>" ;
 					echo "<td>".$result_row[3]."</td>" ;
-					echo "</tr>";
+					echo "<td><a href='delshow.php?id=$result_row[4]'>刪除</a></td></tr>" ;
 			}
 		}
 		?>

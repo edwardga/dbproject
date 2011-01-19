@@ -34,9 +34,10 @@
         	<th class="head">歌曲名稱</td>
             <th class="head">歌曲風格</td>
             <th class="head">敘述</td>
+            <th class="head"></td>
         </tr>
         <?php
-			$song = "SELECT song.name, showstyle.name , song.content
+			$song = "SELECT song.name, showstyle.name , song.content ,song.id
 					 FROM `song`, `artist`, `showstyle` 
 					 WHERE song.ar_id = artist.id AND artist.id = '$ar_id_r[0]' AND song.style_id = showstyle.id 
 				 ORDER BY song.id ;" ;
@@ -47,7 +48,7 @@
 					echo "<td>".$result_row[0]."</td>" ;
 					echo "<td>".$result_row[1]."</td>" ;
 					echo "<td>".$result_row[2]."</td>" ;
-					echo "</tr>";
+					echo "<td><a href='delsong.php?id=$result_row[3]'>刪除</a></td></tr>" ;
 		}
 		?>
         

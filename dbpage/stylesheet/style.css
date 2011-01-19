@@ -148,6 +148,102 @@ img.note{position:absolute; top:35px;}
 .indextable a, .indextable a:link, .indextable a:visited, .indextable a:active	{color: #FFFFFF;}
 .indextable a:hover 													{color: #FFFFFF;}
 
+.showinfo{
+	overflow:auto;
+	max-width:1000px;
+	margin: 20px auto 0 auto;
+	padding-bottom:5px;
+}
+/*.showinfo table{
+	background-color: #783143;
+	max-width: 1000px;
+}
+.showinfo td{
+	background-color: #293633;
+	border-top: 0px solid #783143;
+	border-bottom: 0px solid #783143;
+	padding: 5px 20px 5px 20px;
+	color: #FFFFFF;
+	font-size: 16px;
+	font-family:"微軟正黑體", "新細明體", "標楷體";
+	word-break:break-all; 
+}
+.showinfo h2{color:#F00;}
+.showinfo a, .showinfo a:link, .showinfo a:visited, .showinfo a:active	{color: #FFFFFF;}
+.showinfo a:hover*/
+
+.showinfo2{
+	float:left;
+	margin-left: 50px;	
+}
+.showinfo2 table{
+	background-color: #783143;
+	width: 400px;
+}
+.showinfo2 td{
+	background-color: #293633;
+	border-top: 0px solid #783143;
+	border-bottom: 0px solid #783143;
+	padding: 5px 20px 5px 20px;
+	color: #FFFFFF;
+	font-size: 16px;
+	font-family:"微軟正黑體", "新細明體", "標楷體";
+	word-break:break-all; 
+	text-align:center;
+}
+#comment{
+	float:left; clear:left;
+	margin: 30px 0 0 50px;
+}
+#comment table{
+	background-color: #783143;
+	width: 400px;
+}
+#comment td{
+	border-top: 0px solid #783143;
+	border-bottom: 0px solid #783143;
+	padding: 5px 20px 5px 20px;
+	color: #293633;
+	font-size: 16px;
+	font-family:"微軟正黑體", "新細明體", "標楷體";
+	word-break:break-all;
+}
+
+#showcomment{
+	float:right;
+	margin: 3px 50px 0 0;
+}
+#showcomment2 table{
+	background-color: #783143;
+	width: 370px;
+	margin-top:10px;
+}
+#showcomment2 td{
+	background-color: #293633;
+	border-top: 0px solid #783143;
+	border-bottom: 0px solid #783143;
+	padding: 5px 20px 5px 20px;
+	color: #FFFFFF;
+	font-size: 16px;
+	font-family:"微軟正黑體", "新細明體", "標楷體";
+	word-break:break-all; 
+	text-align:center;	
+}
+
+#showcomment h1{
+	background-color:#F2B872; 
+	color:#293633;
+	text-align:center; padding:5px;
+	border-radius: 10px 10px 0 0;
+	font-size:16px;
+	font-family:"微軟正黑體", "新細明體", "標楷體";
+	font-weight:bold; width: 390px;
+}
+#showcomment2{
+	height: 455px;
+	overflow:auto;
+}
+
 #nav2{
 	width: 1010px;
 	height: 40px;
@@ -219,7 +315,7 @@ img.note{position:absolute; top:35px;}
 	color:#293633; margin:0 10px 0 10px; 
 	text-align:center; padding:5px;
 	border-radius: 0 0 10px 10px;
-	font-size:16px;
+	font-size:16px; font-weight:bold;
 	font-family:"微軟正黑體", "新細明體", "標楷體";
 }
 
@@ -239,8 +335,8 @@ img.note{position:absolute; top:35px;}
 }
 .regulartable h1{color: #F00; text-align:center;}
 
-.left{background-color: #F2B872; color: #293633; text-align:center;}
-.right{background-color: #F2B872; color: #293633; text-align:center;}
+.left{background-color: #F2B872; color: #293633; text-align:center; font-weight:bold;}
+.right{background-color: #F2B872; color: #293633; text-align:center; font-weight:bold;}
 
 #footer{
 	background-color: #593B3B;

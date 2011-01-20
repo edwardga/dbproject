@@ -21,13 +21,13 @@
 </div>
 	<div class = "indextable">
     <table>
-    		<tr>
+<tr>
             <th colspan="2" class="head"><?php echo $find[1]; ?></th>
         </tr>
         <tr>
         	<td>出道年份</td>
             <td><?php echo $find[2]; ?></td>
-        </tr>
+        </tr>        
         </table>
 
         

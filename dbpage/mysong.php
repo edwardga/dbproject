@@ -42,14 +42,19 @@
 					 WHERE song.ar_id = artist.id AND artist.id = '$ar_id_r[0]' AND song.style_id = showstyle.id 
 				 ORDER BY song.id ;" ;
 			$song_result = mysql_query($song);
+			$temp = 0;
         while ($result_row = mysql_fetch_row($song_result) )
 		{
+					$temp = 1 ;
 					echo "<tr>" ;
-					echo "<td>".$result_row[0]."</td>" ;
+					echo "<td><a href='songinfo.php?id=$result_row[3]'>".$result_row[0]."</a></td>" ;
 					echo "<td>".$result_row[1]."</td>" ;
 					echo "<td>".$result_row[2]."</td>" ;
 					echo "<td><a href='delsong.php?id=$result_row[3]'>刪除</a></td></tr>" ;
 		}
+			if ($temp == 0)
+				echo "<tr><td colspan='5' style='text-align:center'>您並未新增歌曲</td></tr>" ;
+
 		?>
         
     </table>

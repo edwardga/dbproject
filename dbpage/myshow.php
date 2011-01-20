@@ -45,9 +45,12 @@
 					 WHERE show.l_id=location.id AND show.sell_id=sellsystem.id AND show.ar_id = artist.id AND artist.id = '$ar_id_r[0]'
 				 ORDER BY show.day ;" ;
 			$show_result = mysql_query($show);
+			$temp1 = 0 ;
+			$temp2 = 0 ;
         while ($result_row = mysql_fetch_row($show_result) )
 		{
 			if($result_row[1]>=$currday){
+					$temp1 = 1 ;
 					echo "<tr>" ;
 					echo "<td><a href='showinfo.php?id=$result_row[4]'>".$result_row[0]."</a></td>" ;
 					echo "<td>".$result_row[1]."</td>" ;
@@ -56,6 +59,8 @@
 					echo "<td><a href='delshow.php?id=$result_row[4]'>刪除</a></td></tr>" ;
 			}
 		}
+		if ($temp1 == 0)
+			echo "<tr><td colspan='5' style='text-align:center'>您並未新增未來表演</td></tr>" 
 		?>
         
     </table>
@@ -83,6 +88,7 @@
         while ($result_row = mysql_fetch_row($show_result) )
 		{
 			if($result_row[1]<$currday){
+					$temp2 = 1 ;
 					echo "<tr>" ;
 					echo "<td><a href='showinfo.php?id=$result_row[4]'>".$result_row[0]."</a></td>" ;
 					echo "<td>".$result_row[1]."</td>" ;
@@ -91,6 +97,8 @@
 					echo "<td><a href='delshow.php?id=$result_row[4]'>刪除</a></td></tr>" ;
 			}
 		}
+		if ($temp2 == 0)
+			echo "<tr><td colspan='5' style='text-align:center'>您並未新增過去表演</td></tr>" 
 		?>
         
     </table>

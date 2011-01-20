@@ -46,6 +46,10 @@
             <tr>
             	<td class='left'>出道年份</td>
                 <td class='right'><input type='year' size='20' name='debut_time'/></td>
+			<tr>
+				<td class='left'>簡短敘述</td>
+				<td class='right'><textarea cols='23' rows='5' style='resize:none' name='statement'></textarea></td>
+			</tr>
 			"
 		; }
 		else

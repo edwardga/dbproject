@@ -7,6 +7,7 @@
 	$name = $_POST["name"] ;
 	$dtime = $_POST["debut_time"] ;
 	$phone = $_POST["phone"] ;
+	$state = $_POST["statement"];
 	$id_seq = 1 ;
 	$db_host = 'localhost' ;
 	$db_database = 'DBproject' ;
@@ -34,7 +35,7 @@
 		while ($result_row = mysql_fetch_row(($result)))
 			$id_seq += 1 ;
 		$query1 = "INSERT INTO account(account_id, password, type, type_id) VALUES ('$acc', '$pw', '$type', '$id_seq') " ;
-		$query2 = "INSERT INTO artist(id, name, debut_time) VALUES ('$id_seq', '$name', '$dtime') " ;
+		$query2 = "INSERT INTO artist(id, name, debut_time, statement) VALUES ('$id_seq', '$name', '$dtime', '$state') " ;
 		$result1 = mysql_query($query1) ;
 		$result2 = mysql_query($query2) ;	
 	}

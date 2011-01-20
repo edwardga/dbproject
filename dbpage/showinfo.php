@@ -24,9 +24,12 @@
 		while ($fetch = mysql_fetch_row($find2))
 		{
 		$type = auth() ;
+		if ($type!=NULL)
+		{
 		$name1 = "SELECT name FROM account, `$type` WHERE account.account_id = '$_SESSION[account]' AND account.type = '$type' AND account.type_id=$type.id" ;
 		$name2 = mysql_query($name1) ;
 		$name = mysql_fetch_row($name2) ;
+		}
 		echo"<table>
             <tr>
             	<td width='30%' class='left'>標題</td>
@@ -34,7 +37,7 @@
             </tr>
             <tr>
             	<td width='30%' class='left'>稱呼</td>
-            	<td>$name[0]</td>
+            	<td>$fetch[1]</td>
             </tr>
             <tr>
             	<td width='30%' class='left'>內容</td>

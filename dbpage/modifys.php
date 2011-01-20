@@ -19,6 +19,8 @@
 	if (!$selection)
 		die ("selection failed".mysql_error()) ; 
 	mysql_query("SET NAMES 'utf8'");
+	if (auth()!=NULL)
+	{
 	$id = $_GET['id'] ;
 	echo "</div><div class='indextable'>" ;
 	echo "<table>" ;
@@ -59,6 +61,6 @@
 				</select></td></tr>" ;
 		}
 	echo "<tr><td colspan = '4'></td><td  style='text-align:center'><input name='submit' type = 'submit' value = '送出'></td></tr>" ;}
-	echo "</form></table>" ;
+	echo "</form></table>" ;}
 ?>
 <?php require_once "include/foot.php"; ?>

@@ -1,10 +1,7 @@
 <?php
 	include_once('include/auth.php') ;
 	if(auth()=="artist")
-	{
 		require_once "include/header_logged_artist.php";
-		//echo "<h1>您沒有使用此頁面的權力</h1>" ;
-	}
 	elseif(auth()=="audience")
 		require_once "include/header_logged_aud.php";
 	else
@@ -22,6 +19,8 @@
 	if (!$selection)
 		die ("selection failed".mysql_error()) ; 
 	mysql_query("SET NAMES 'utf8'");
+	if (auth()!=NULL)
+	{
 ?>
 
 <html>
@@ -77,7 +76,7 @@
 		echo "<td><a href='deletes.php?id=$song[0]'>刪除</a></td></tr>" ;
 		}
 	if ($temp == 0)
-		echo "<td colspan='8' style='text-align:center'>您沒有將歌曲加入我的最愛中" ;
+		echo "<td colspan='8' style='text-align:center'>您沒有將歌曲加入我的最愛中" ;}
 ?>
 </table>
 </div>

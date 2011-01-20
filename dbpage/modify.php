@@ -20,7 +20,9 @@
 		die ("selection failed".mysql_error()) ; 
 	mysql_query("SET NAMES 'utf8'");
 	$id = $_GET['id'] ;
-$search = "SELECT * FROM `show` , `showstyle`, `artist`  WHERE `show`.style_id = `showstyle`.id AND artist.id = show.ar_id AND `show`.id = $id ;" ;
+	if (auth()!=NULL)
+	{
+	$search = "SELECT * FROM `show` , `showstyle`, `artist`  WHERE `show`.style_id = `showstyle`.id AND artist.id = show.ar_id AND `show`.id = $id ;" ;
 	$query = mysql_query($search) ; 
 	echo "</div><div class='indextable'>" ;
 	echo "<table><form method='post' action='modify1.php?id=$id'" ;
@@ -51,6 +53,7 @@ $search = "SELECT * FROM `show` , `showstyle`, `artist`  WHERE `show`.style_id =
 				<option value =2>★★☆☆☆
 				<option value =1>★☆☆☆☆			
 				</select></td>" ;	
-		echo "<td><input name = 'submit' type = 'submit' value = '送出'></td></tr>" ;
+		echo "<td><input name = 'submit' type = 'submit' value = '送出'></td></tr>" ;}
 	}
 ?>
+<?php require_once "include/foot.php"; ?>

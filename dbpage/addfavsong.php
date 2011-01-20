@@ -1,11 +1,16 @@
 <?php
 	include_once('include/auth.php') ;
-	if(auth()=="artist")
-		require_once "include/header_logged_artist.php";
-	elseif(auth()=="audience")
-		require_once "include/header_logged_aud.php";
-	else
+	if(auth()==NULL)
+	{
 		require_once "include/header_index.php";
+		echo "<h1>您沒有使用此頁面的權力</h1>" ;
+	}
+	else
+	{
+		if(auth()=="audience")
+			require_once "include/header_logged_aud.php";
+		elseif (auth()=="artist")
+			require_once "include/header_logged_artist.php";
 	$db_host = 'localhost' ;
 	$db_database = 'dbproject' ;
 	$db_username = 'root' ;
@@ -59,6 +64,6 @@
 	echo "<tr><td colspan = '4'></td><td  style='text-align:center'><input name='submit' type = 'submit' value = '送出'></td></tr>" ;}
 	else
 		echo "<tr><td style = 'text-align:center' colspan = '5' >您並未選擇任何歌曲</td>" ;
-	echo "</form></table>" ;
+	echo "</form></table>" ;}
 ?>
 <?php require_once "include/foot.php"; ?>

@@ -1,11 +1,17 @@
 <?php require_once "include/auth.php"?>
 <?php 
-	if(auth()=="artist")
-		require_once "include/header_logged_artist.php";
-	elseif(auth()=="audience")
-		require_once "include/header_logged_aud.php";
-	else
+	include_once('include/auth.php') ;
+	if(auth()==NULL)
+	{
 		require_once "include/header_index.php";
+		echo "<h1>您沒有使用此頁面的權力</h1>" ;
+	}
+	else
+	{
+		if(auth()=="audience")
+			require_once "include/header_logged_aud.php";
+		elseif (auth()=="artist")
+			require_once "include/header_logged_artist.php";
 	mysql_query("SET NAMES 'utf8'");
 ?>
 </div>
@@ -61,4 +67,5 @@
 </div>
 </body>
 </html>
-<?php require_once "include/foot.php"; ?>
+<?php } require_once "include/foot.php"; ?>
+

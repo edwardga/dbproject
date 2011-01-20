@@ -132,7 +132,7 @@ img.note{position:absolute; top:35px;}
 .indextable table{
 	background-color: #783143;
 	margin: 20px auto 0 auto;
-	max-width: 1000px;
+	max-width: 900px;
 }
 .indextable td{
 	background-color: #293633;
@@ -143,6 +143,7 @@ img.note{position:absolute; top:35px;}
 	font-size: 16px;
 	font-family:"微軟正黑體", "新細明體", "標楷體";
 	word-break:break-all; 
+	max-width: 400px;
 }
 .indextable h2{color:#F00;}
 .indextable a, .indextable a:link, .indextable a:visited, .indextable a:active	{color: #FFFFFF;}
@@ -173,6 +174,7 @@ img.note{position:absolute; top:35px;}
 	font-family:"微軟正黑體", "新細明體", "標楷體";
 	word-break:break-all; 
 	text-align:center;
+	max-width: 250px;
 }
 .showinfo2 a, .showinfo2 a:link, .showinfo2 a:visited, .showinfo2 a:active	{color: #FFFFFF;}
 .showinfo2 a:hover 													{color: #FFFFFF;}
@@ -216,7 +218,7 @@ img.note{position:absolute; top:35px;}
 	color: #FFFFFF;
 	font-size: 16px;
 	font-family:"微軟正黑體", "新細明體", "標楷體";
-	word-break:break-all; 	
+	word-break:break-all; 
 }
 
 #showcomment h1{

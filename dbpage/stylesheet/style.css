@@ -177,6 +177,8 @@ img.note{position:absolute; top:35px;}
 .showinfo2 a, .showinfo2 a:link, .showinfo2 a:visited, .showinfo2 a:active	{color: #FFFFFF;}
 .showinfo2 a:hover 													{color: #FFFFFF;}
 
+
+
 #comment{
 	float:left; clear:left;
 	margin: 30px 0 0 50px;
@@ -194,6 +196,7 @@ img.note{position:absolute; top:35px;}
 	font-family:"微軟正黑體", "新細明體", "標楷體";
 	word-break:break-all;
 }
+
 
 #showcomment{
 	float:right;
@@ -225,10 +228,7 @@ img.note{position:absolute; top:35px;}
 	font-family:"微軟正黑體", "新細明體", "標楷體";
 	font-weight:bold; width: 390px;
 }
-#showcomment2{
-	height: 485px;
-	overflow:auto;
-}
+#showcomment2{height: 485px; overflow:auto;}
 
 #nav2{
 	width: 1010px;
@@ -332,4 +332,21 @@ img.note{position:absolute; top:35px;}
 	margin: 40px auto 0 auto;
 	padding: 5px 0 0 0;
 	text-align:center;
+}
+#showmes{height: 485px; overflow:auto; 	margin: 5px auto 0 auto;
+	padding-bottom:5px;width: 400px;}
+#showmes table{
+	background-color: #783143;
+	width: 380px;
+	margin: 10px auto 0 auto;
+}
+#showmes td{
+	background-color: #293633;
+	border-top: 0px solid #783143;
+	border-bottom: 0px solid #783143;
+	padding: 5px 20px 5px 20px;
+	color: #FFFFFF;
+	font-size: 16px;
+	font-family:"微軟正黑體", "新細明體", "標楷體";
+	word-break:break-all; 	
 }

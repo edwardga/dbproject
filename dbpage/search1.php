@@ -1,11 +1,16 @@
 <?php require_once "include/auth.php"?>
 <?php 
-	if(auth()=="artist")
-		require_once "include/header_logged_artist.php";
-	elseif(auth()=="audience")
-		require_once "include/header_logged_aud.php";
-	else
+	if(auth()=="NULL")
+	{
 		require_once "include/header_index.php";
+		echo "<h1>您沒有使用此頁面的權力</h1>" ;
+	}
+	else
+	{
+	if(auth()=="audience")
+		require_once "include/header_logged_aud.php";
+	elseif (auth()=="artist")
+		require_once "include/header_logged_artist.php";
 	$db_host = 'localhost' ;
 	$db_database = 'dbproject' ;
 	$db_username = 'root' ;
@@ -75,4 +80,4 @@
 	echo "</form>" ;
 	echo "</table>" ;
 ?>
-<?php require_once "include/foot.php"; ?>
+<?php } require_once "include/foot.php"; ?>

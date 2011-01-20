@@ -10,7 +10,7 @@
 		if(auth()=="audience")
 			require_once "include/header_logged_aud.php";
 		elseif (auth()=="artist")
-			require_once "include/header_logged_artist.php";}
+			require_once "include/header_logged_artist.php";
 ?>
 	</div>
 	<div class='indextable'>
@@ -36,4 +36,4 @@
 	</table>
 	</form>
 	
-<?php require_once "include/foot.php"; ?>
+<?php } require_once "include/foot.php"; ?>

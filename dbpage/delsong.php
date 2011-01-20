@@ -22,5 +22,7 @@
 	$id = $_GET['id'] ;
 	$query = "DELETE FROM `song` WHERE id = $id ;" ;
 	$result = mysql_query($query) ;
+	$query1 = "DELETE FROM `myfavsong` WHERE s_id = $id ;" ;
+	$result1 = mysql_query($query1) ;
 	header ("Location:mysong.php") ;
 ?>

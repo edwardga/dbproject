@@ -110,21 +110,25 @@
         </tr>
         </table>
 </div>
-  <div id="comment">
+<?php if (auth()!=NULL)
+			echo "
+  <div id='comment'>
   		<table>
-        <form method="post" action="<?php echo "write.php?id=$id" ?>"> ;
-        	<th colspan="2" class="head">評論</th>
+        <form method='post' action='write.php?id=$id'> ;
+        	<th colspan='2' class='head'>評論</th>
             <tr>
-            	<td class="left">標題</td>
-                <td style="background-color:#F2B872; padding-left:25px"><input name = 'title' type = 'text' /></td>
+            	<td class='left'>標題</td>
+                <td style='background-color:#F2B872; padding-left:25px'><input name = 'title' type = 'text' /></td>
             </tr>
             <tr>
-            	<td class="left">內容</td>
-            	<td  class="right"><textarea name = 'content' cols="40" rows="5" style="resize:none"></textarea></td>
+            	<td class='left'>內容</td>
+            	<td  class='right'><textarea name = 'content' cols='40' rows='5' style='resize:none'></textarea></td>
             </tr>
-            <th colspan="2" class="foot"><input type = 'submit' name = 'submit' value = '送出' /></th>
+            <th colspan='2' class='foot'><input type = 'submit' name = 'submit' value = '送出' /></th>
         </form>
         </table>        
   </div>
+  " ;
+ ?>
 
-<?php require_once "include/foot.php"; ?>
+<?php require_once 'include/foot.php'; ?>

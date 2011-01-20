@@ -37,3 +37,4 @@
         
 </body>
 </html>
+<?php require_once "include/foot.php"; ?>

@@ -34,7 +34,7 @@
 		$date2 = "'".$date2."'" ;
 	$style = $_GET['style'] ;
 	$artist = $_GET['artist'] ;
-	$search = "SELECT * FROM `show` , `showstyle`, `artist`  WHERE `show`.style_id = `showstyle`.id AND show.name LIKE '%$name%' AND day > $date1 AND day < $date2 AND showstyle.name LIKE '%$style%' AND artist.id = show.ar_id AND artist.name LIKE '%$artist%' ;" ;
+	$search = "SELECT * FROM `show` , `showstyle`, `artist`  WHERE `show`.style_id = `showstyle`.id AND show.name LIKE '%$name%' AND day >= $date1 AND day <= $date2 AND showstyle.name LIKE '%$style%' AND artist.id = show.ar_id AND artist.name LIKE '%$artist%' ;" ;
 	$query = mysql_query($search) ; 
 	echo "</div><div class='indextable'>" ;
 	echo "<table>" ;

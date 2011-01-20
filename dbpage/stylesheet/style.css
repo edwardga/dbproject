@@ -205,7 +205,7 @@ img.note{position:absolute; top:35px;}
 
 #showcomment2 table{
 	background-color: #783143;
-	width: 390px;
+	width: 380px;
 	margin-top:10px;
 }
 #showcomment2 td{
@@ -216,8 +216,7 @@ img.note{position:absolute; top:35px;}
 	color: #FFFFFF;
 	font-size: 16px;
 	font-family:"微軟正黑體", "新細明體", "標楷體";
-	word-break:break-all; 
-	text-align:center;	
+	word-break:break-all; 	
 }
 
 #showcomment h1{
@@ -230,7 +229,7 @@ img.note{position:absolute; top:35px;}
 	font-weight:bold; width: 390px;
 }
 #showcomment2{
-	height: 455px;
+	height: 485px;
 	overflow:auto;
 }
 

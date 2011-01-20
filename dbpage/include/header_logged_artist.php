@@ -54,7 +54,8 @@
         <li><a href="myfavorite.php">最愛表演</a></li>
         <li><a href="myfavsong.php">最愛歌曲</a></li>
         <li><a href="search.php">搜尋表演</a></li>
-		<li><a href="searchsong.php">搜尋歌曲</a></li>        
+		<li><a href="searchsong.php">搜尋歌曲</a></li>
+		<li><a href="guestbook.php">留言板</a></li>                  
     </ul>
 	</div>
 <div class="apDiv4">

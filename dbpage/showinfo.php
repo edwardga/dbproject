@@ -29,15 +29,15 @@
 		$name = mysql_fetch_row($name2) ;
 		echo"<table>
             <tr>
-            	<td width='30%'>標題</td>
+            	<td width='30%' class='left'>標題</td>
             	<td>$fetch[4]</td>
             </tr>
             <tr>
-            	<td width='30%'>稱呼</td>
+            	<td width='30%' class='left'>稱呼</td>
             	<td>$name[0]</td>
             </tr>
             <tr>
-            	<td width='30%'>內容</td>
+            	<td width='30%' class='left'>內容</td>
             	<td>$fetch[3]</td>
             </tr>
         </table>

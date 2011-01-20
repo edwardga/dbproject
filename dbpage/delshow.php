@@ -22,5 +22,9 @@
 	$id = $_GET['id'] ;
 	$query = "DELETE FROM `show` WHERE id = $id ;" ;
 	$result = mysql_query($query) ;
+	$query1 = "DELETE FROM `myfavorite` WHERE s_id = $id ;" ;
+	$result1 = mysql_query($query1) ;
+	$query2 = "DELETE FROM `comment` WHERE s_id = $id ;" ;
+	$result2 = mysql_query($query2) ;
 	header ("Location:myshow.php") ;
 ?>

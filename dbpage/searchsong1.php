@@ -40,7 +40,7 @@
 	{
 		$result = 1 ;
 		echo "<tr>
-				<td>$fetch[1]</td>
+				<td><a href='songinfo.php?id=$fetch[0]'>$fetch[1]</a></td>
 				<td>$fetch[6]</td>
 				<td>$fetch[9]</td>" ;
 		echo "<td style='text-align:center'><input type=checkbox name='id[]' value= '$fetch[0]'></td></tr>" ;		

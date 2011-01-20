@@ -59,7 +59,7 @@
 		if ($art2)
 			$art = mysql_fetch_row($art2) ;
 		echo "<tr>
-				<td>$song[1]</a></td>
+				<td><a href='songinfo.php?id=$song[0]'>$song[1]</a></td>
 				<td>$style[0]</td><td>" ;
 		if ($result[3]==1)
 			echo "★☆☆☆☆" ;

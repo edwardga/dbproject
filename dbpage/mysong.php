@@ -45,7 +45,7 @@
         while ($result_row = mysql_fetch_row($song_result) )
 		{
 					echo "<tr>" ;
-					echo "<td>".$result_row[0]."</td>" ;
+					echo "<td><a href='songinfo.php?id=$result_row[3]'>".$result_row[0]."</a></td>" ;
 					echo "<td>".$result_row[1]."</td>" ;
 					echo "<td>".$result_row[2]."</td>" ;
 					echo "<td><a href='delsong.php?id=$result_row[3]'>刪除</a></td></tr>" ;

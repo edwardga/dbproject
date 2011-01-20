@@ -19,6 +19,8 @@
 	if (!$selection)
 		die ("selection failed".mysql_error()) ; 
 	mysql_query("SET NAMES 'utf8'");
+	if (auth()!=NULL)
+	{
 ?>
 
 <html>
@@ -86,7 +88,7 @@
 		echo "<td><a href='delete.php?id=$show[0]'>刪除</a></td></tr>" ;
 	}
 	if ($temp == 0)
-		echo "<td colspan='8' style='text-align:center'>您沒有將表演加入我的最愛中" ;
+		echo "<td colspan='8' style='text-align:center'>您沒有將表演加入我的最愛中" ;}
 ?>
 </table>
 </div>
